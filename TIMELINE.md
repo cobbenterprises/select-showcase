@@ -74,13 +74,27 @@ The timeline's reflection section records what went wrong, because the correctio
 
 ## By the numbers
 
-- **~10,000** Markdown notes in the vault
-- **15+** custom plugins, one monorepo, one shared kit
-- **2,500+** captured media items as native notes
-- **131** people records harvested from existing notes and message history
-- **76** real projects under cockpit management
-- **85** dated timeline entries across **33** narrative arcs
-- **2** machines, **N** interchangeable agents, **1** source of truth
+All live counts from the real system, July 21, 2026:
+
+**The record**
+- **511** changelog entries — every ship, logged by the agent that shipped it
+- **155** Dev Dashboard cards: **96** reviewed, **18** shipped awaiting review, **17** honestly killed (not-sold or rejected)
+- **59** agent product recommendations filed to the meeting-notes log
+- **9** session debriefs · **85** timeline entries across **33** narrative arcs
+
+**The build**
+- **21** plugins in one monorepo · **~31,000** lines of plugin source · **108** commits
+- **7** shared agent skills, one store, read live by every agent
+
+**The life inside it**
+- **~10,000** files in the vault · **219** daily logs
+- **2,655** captured media items as native notes
+- **131** people records · **76** projects under cockpit management
+
+**The runtime**
+- **20** scheduled jobs on the home server
+- **2** machines · **N** interchangeable agents · **1** source of truth
+- One AI budget governor: **$10/month** with a hard stop — the entire assistant layer runs inside it
 
 ---
 

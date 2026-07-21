@@ -68,6 +68,8 @@ The system kept its own records as it was built — a changelog of every ship, a
 
 It includes the mistakes, kept on purpose.
 
+And the scale is verifiable, not vibes: **511** changelog entries, **155** dev-cycle cards (96 of them through the owner's review room), **21** plugins from **~31,000** lines of agent-written source, **2,655** captured media items, **20** scheduled server jobs — all of it operated on a **$10/month** AI budget with a hard stop. Full stats in the [timeline](TIMELINE.md#by-the-numbers).
+
 ---
 
 *Select is a personal system and is not distributed. Questions and conversation are welcome via issues.*
