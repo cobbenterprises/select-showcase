@@ -27,16 +27,16 @@ Every one of these is a live surface used daily, not a demo:
 
 <table>
   <tr>
-    <td width="25%"><a href="SUBSYSTEMS.md#select-home"><img src="media/home-desktop.png" alt="Select Home"/><br/><sub><b>Home</b></sub></a></td>
-    <td width="25%"><a href="SUBSYSTEMS.md#select-tasks--board"><img src="media/tasks.png" alt="Tasks"/><br/><sub><b>Tasks + Board</b></sub></a></td>
-    <td width="25%"><a href="SUBSYSTEMS.md#media-log"><img src="media/media-library.png" alt="Media Library"/><br/><sub><b>Media Library</b></sub></a></td>
-    <td width="25%"><a href="SUBSYSTEMS.md#finances"><img src="media/finances-overview.png" alt="Finances"/><br/><sub><b>Finances</b></sub></a></td>
+    <td width="25%"><a href="https://cobbenterprises.github.io/select-showcase/SUBSYSTEMS.html#select-home"><img src="media/home-desktop.png" alt="Select Home"/><br/><sub><b>Home</b></sub></a></td>
+    <td width="25%"><a href="https://cobbenterprises.github.io/select-showcase/SUBSYSTEMS.html#select-tasks--board"><img src="media/tasks.png" alt="Tasks"/><br/><sub><b>Tasks + Board</b></sub></a></td>
+    <td width="25%"><a href="https://cobbenterprises.github.io/select-showcase/SUBSYSTEMS.html#media-log"><img src="media/media-library.png" alt="Media Library"/><br/><sub><b>Media Library</b></sub></a></td>
+    <td width="25%"><a href="https://cobbenterprises.github.io/select-showcase/SUBSYSTEMS.html#finances"><img src="media/finances-overview.png" alt="Finances"/><br/><sub><b>Finances</b></sub></a></td>
   </tr>
   <tr>
-    <td width="25%"><a href="SUBSYSTEMS.md#comms"><img src="media/comms-system.png" alt="Comms"/><br/><sub><b>Comms</b></sub></a></td>
-    <td width="25%"><a href="SUBSYSTEMS.md#ai-router"><img src="media/ai-router.png" alt="AI Router"/><br/><sub><b>AI Router</b></sub></a></td>
-    <td width="25%"><a href="SUBSYSTEMS.md#intentions"><img src="media/intentions-review.png" alt="Intentions"/><br/><sub><b>Intentions</b></sub></a></td>
-    <td width="25%"><a href="SUBSYSTEMS.md#dev-dashboard"><img src="media/dev-dashboard.png" alt="Dev Dashboard"/><br/><sub><b>Dev Dashboard</b></sub></a></td>
+    <td width="25%"><a href="https://cobbenterprises.github.io/select-showcase/SUBSYSTEMS.html#comms"><img src="media/comms-system.png" alt="Comms"/><br/><sub><b>Comms</b></sub></a></td>
+    <td width="25%"><a href="https://cobbenterprises.github.io/select-showcase/SUBSYSTEMS.html#ai-router"><img src="media/ai-router.png" alt="AI Router"/><br/><sub><b>AI Router</b></sub></a></td>
+    <td width="25%"><a href="https://cobbenterprises.github.io/select-showcase/SUBSYSTEMS.html#intentions"><img src="media/intentions-review.png" alt="Intentions"/><br/><sub><b>Intentions</b></sub></a></td>
+    <td width="25%"><a href="https://cobbenterprises.github.io/select-showcase/SUBSYSTEMS.html#dev-dashboard"><img src="media/dev-dashboard.png" alt="Dev Dashboard"/><br/><sub><b>Dev Dashboard</b></sub></a></td>
   </tr>
 </table>
 
