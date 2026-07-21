@@ -1,0 +1,8 @@
+theme: jekyll-theme-cayman
+title: Select
+description: A personal operating system, built inside an Obsidian vault, operated by AI agents
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
