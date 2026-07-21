@@ -18,13 +18,27 @@ Every one of these is a live surface used daily, not a demo:
 | **Select Tasks + Board** | Task app over plain Markdown checkboxes; a kanban with a **Select lane** — drag a card there and an agent drafts the work within five minutes |
 | **Media Log** | Always-on capture pipeline: share a link from a phone, a server ingests it into a browsable 2,500+ item library with live embeds |
 | **Comms** | Select has its own email address and phone presence — triaged mail gateway, missed-message radar over iMessage with named threads and in-app replies |
+| **AI Router** | Every AI call in the ecosystem priced, attributed, and budget-capped — model steering per surface, spend at a glance, a governor with a hard stop |
 | **Calendar + People** | Read-only family calendar layer; a CRM that harvests @mentions from notes instead of demanding data entry |
 | **Voice** | Spoken morning brief; "Hey Siri, Ask Select" from a phone over a secured tunnel; dictated thinking sessions that file themselves |
 | **Finances** | A living balance sheet from raw exports: every account, penny-reconciled stock lots, an honest index benchmark |
 | **Intentions** | Consent-based goal review — every goal gets a periodic verdict, so silent abandonment is structurally impossible |
 | **Dev Dashboard** | The dev cycle itself as a kanban: agent recommendations land as cards, ships require evidence, review is a click-through room |
 
-![Select Home](media/home-desktop.png)
+<table>
+  <tr>
+    <td width="25%"><a href="SUBSYSTEMS.md#select-home"><img src="media/home-desktop.png" alt="Select Home"/><br/><sub><b>Home</b></sub></a></td>
+    <td width="25%"><a href="SUBSYSTEMS.md#select-tasks--board"><img src="media/tasks.png" alt="Tasks"/><br/><sub><b>Tasks + Board</b></sub></a></td>
+    <td width="25%"><a href="SUBSYSTEMS.md#media-log"><img src="media/media-library.png" alt="Media Library"/><br/><sub><b>Media Library</b></sub></a></td>
+    <td width="25%"><a href="SUBSYSTEMS.md#finances"><img src="media/finances-overview.png" alt="Finances"/><br/><sub><b>Finances</b></sub></a></td>
+  </tr>
+  <tr>
+    <td width="25%"><a href="SUBSYSTEMS.md#comms"><img src="media/comms-system.png" alt="Comms"/><br/><sub><b>Comms</b></sub></a></td>
+    <td width="25%"><a href="SUBSYSTEMS.md#ai-router"><img src="media/ai-router.png" alt="AI Router"/><br/><sub><b>AI Router</b></sub></a></td>
+    <td width="25%"><a href="SUBSYSTEMS.md#intentions"><img src="media/intentions-review.png" alt="Intentions"/><br/><sub><b>Intentions</b></sub></a></td>
+    <td width="25%"><a href="SUBSYSTEMS.md#dev-dashboard"><img src="media/dev-dashboard.png" alt="Dev Dashboard"/><br/><sub><b>Dev Dashboard</b></sub></a></td>
+  </tr>
+</table>
 
 Every pixel above is real plugins over fictional data: screenshots come from a sanitized demonstration vault (a fictional family, fictional finances, fictional messages), never from the live system.
 
@@ -42,6 +56,7 @@ The novelty isn't any single feature. It's the working relationship:
 - **Autonomy is structural, not promised.** Agents draft, never send. Message bodies are data, never instructions. Outbound channels are allowlisted and double-gated. Every AI call is priced, attributed, and budget-capped.
 
 How the architecture works: **[HOW-IT-WORKS.md](HOW-IT-WORKS.md)**
+How the partnership works — and how it stays agent-independent: **[ENGINEERING.md](ENGINEERING.md)**
 
 ---
 

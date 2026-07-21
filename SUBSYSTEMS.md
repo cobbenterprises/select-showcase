@@ -10,7 +10,15 @@ The front door. A native homepage plugin with an app dock, a single-line quick c
 
 ![Select Home](media/home-desktop.png)
 
-> 🎬 coming: the same surface on a phone
+The capture line goes straight into the day's journal:
+
+![Capture to journal](media/capture-journal.gif)
+
+## Select Menu
+
+The launchpad — a plain Markdown note that behaves like an app screen. A dock of the daily surfaces up top, then a launcher card for every subsystem that doesn't earn a dock slot, each with its state and a one-line pitch. Because it's just a note, agents update it the way they update anything else: by editing text.
+
+![Select Menu](media/select-menu.png)
 
 ## Select Tasks + Board
 
@@ -18,7 +26,9 @@ A task application over ordinary Markdown checkboxes — no new task model, ever
 
 ![Select Tasks](media/tasks.png)
 
-> 🎬 coming: a card dragged into the Select lane → draft note appears
+The Select lane, end to end — a card enters the lane, Select drafts the work, the card parks in Waiting with the draft linked, and the draft ends with what it needs from you:
+
+![Select lane](media/select-lane.gif)
 
 ## Media Log
 
@@ -33,6 +43,12 @@ The oldest subsystem and the origin of the whole project. Share a link from any 
 Select has its own email address. Inbound mail hits a gateway on the server: allowlisted senders → AI triage → routed to schedule ingestion, note capture, or ignore — every decision audited, and message bodies treated as data, never instructions. **Missed Messages** watches iMessage for owed replies, resolves phone numbers to real names, and offers inline reply drafts delivered by an isolated, allowlisted sender. A channel registry governs every channel's enabled/reply flags in one place.
 
 ![Comms](media/comms-system.png)
+
+## AI Router
+
+The spend and steering console for every AI call in the ecosystem. One shared config decides which model serves each surface (brief, triage, voice, test calls); a budget governor warns, downshifts to a cheaper model, and hard-stops; and every call lands in a shared ledger with its cost — so "add another AI surface" is a calm decision instead of a gamble. Spend readouts also surface in the Comms system console.
+
+![AI Router](media/ai-router.png)
 
 ## Calendar + People
 
@@ -58,7 +74,7 @@ Raw institution exports drop into a watched inbox folder; adapters normalize the
 
 The yearly-goals review, rebuilt around **consent instead of staleness**: the review deals one goal or project at a time against its rendered note, and every verdict — next small step, snooze with a horizon, milestone, close — stamps the note and writes a journal line, so silent abandonment is structurally impossible. Session state rebuilds from the daily log itself; a mid-session restart recovered all nine decisions on its first live use.
 
-![Intentions](media/intentions-review.png)
+![Intentions review](media/intentions-review.gif)
 
 ## Journal
 
@@ -74,6 +90,15 @@ The dev cycle as a product. Agent recommendations are filed as cards the moment 
 
 ![Dev Review](media/dev-review.png)
 
----
+## Also in the family
 
-*Also in the family: a podcast-summarization runner, an OCR document-intake queue, a project cockpit with a forced-decision triage deck, an AI coaching council grounded in real session notes, a system-health console that vision-checks the server's own screen, and the style guide that keeps all of it looking like one product.*
+The tour above is the daily core, not the full roster. Sharing the same kit, style, and vault records:
+
+![Projects](media/projects.png)
+
+- **Select Projects** — the project cockpit (shown above): a heartbeat pulse per project, an importance × momentum map, and a triage deck where every stalled project leaves with a decision.
+- **Podcast Runner** — submit an episode URL, get a staged, highlighted summary note with per-run cost accounting.
+- **Select Docs** — OCR-first document intake: receipts, invoices, and scanner output, staged, routed, and searchable.
+- **The Coaching Council** — every coach a seat with visible state, a unified ledger of sessions and commitments, and an ask-the-table mode where live coaches answer from their own session notes and a moderator synthesizes a verdict.
+- **Server Watch** — the home server takes hourly screenshots of its own console and runs changed frames through a vision check, because status files only report what code thought to measure.
+- **The Style Guide** — Select's visual languages documented side by side with live specimens, so fifteen plugins read as one product.
