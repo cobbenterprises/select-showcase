@@ -24,9 +24,11 @@ Every one of these is a live surface used daily, not a demo:
 | **Intentions** | Consent-based goal review — every goal gets a periodic verdict, so silent abandonment is structurally impossible |
 | **Dev Dashboard** | The dev cycle itself as a kanban: agent recommendations land as cards, ships require evidence, review is a click-through room |
 
-Full tour with screens: **[SUBSYSTEMS.md](SUBSYSTEMS.md)**
+![Select Home](media/home-desktop.png)
 
-> 📸 Screenshots and GIFs are being captured from a sanitized demonstration vault and will land in `media/`.
+Every pixel above is real plugins over fictional data: screenshots come from a sanitized demonstration vault (a fictional family, fictional finances, fictional messages), never from the live system.
+
+Full tour with screens: **[SUBSYSTEMS.md](SUBSYSTEMS.md)**
 
 ---
 
