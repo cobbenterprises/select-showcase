@@ -64,7 +64,7 @@ How the partnership works — and how it stays agent-independent: **[ENGINEERING
 
 The system kept its own records as it was built — a changelog of every ship, and a narrative timeline distilled from it. The sanitized public cut is here:
 
-**[TIMELINE.md](TIMELINE.md)** — from a named vision (December 2025), through a capture pipeline and months of ecosystem research, to a five-day sprint in July 2026 in which the vault became an operating system — and the week after, when it had to prove it could be lived in.
+**[TIMELINE.md](TIMELINE.md)** — from a named vision (December 2025), through a capture pipeline and months of ecosystem research, to a five-day sprint in July 2026 in which the vault became an operating system — the week it had to prove it could be lived in, and the fortnight after, when it went public, hardened itself, and learned to start the conversation.
 
 It includes the mistakes, kept on purpose.
 
