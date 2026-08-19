@@ -2,8 +2,8 @@
 
 Select keeps its own history: every ship goes into a changelog, and the changelog is periodically distilled into a narrative timeline. This is the public cut of that document — same events, same dates, with personal details removed.
 
-**Span:** December 27, 2025 → August 2, 2026.
-**Shape:** a vision, six months of quiet groundwork, three weeks in which nearly everything below was built — then a fortnight of facing outward, hardening, and living in it.
+**Span:** December 27, 2025 → August 19, 2026.
+**Shape:** a vision, six months of quiet groundwork, three weeks in which nearly everything below was built, a fortnight of facing outward and hardening — then seventeen days of depth: truth-telling reviews, transaction-deep finances, and a conversation spine with its own phone line.
 
 ---
 
@@ -72,6 +72,26 @@ The sprint. More shipped in five days than in the previous six months.
 
 > *Lesson kept: a heartbeat says the process ran, not that the work succeeded — probe the dependency, not just the pulse.*
 
+## Phase 7 — Depth, truth, and a phone line of its own (August 3–19, 2026)
+
+Less new territory, more truth. The system stopped adding rooms and started proving the ones it had.
+
+- **Aug 4–7** — **The ledger learns honesty.** Loan credits posing as income are excluded at the model layer; a "needs eyes" queue is tuned against real data before it ships (the naive rules would have flooded five times as many rows); the full transaction archive imports; and a retailer export that parsed twenty thousand rows "cleanly" while capturing no money at all is caught and rebuilt — a clean run and a correct run are different claims.
+- **Aug 5–6** — **The review becomes an institution.** A standing authoring standard, a review library, embedded prototypes, checkable decision desks — and Review #4's honest thesis: *truth without traction*, printing a zero where the owner's own follow-through hadn't happened. One over-correction (a stated taste hardened into mandatory machinery) lasted eleven minutes and became a rule: preferences are direction, not law.
+- **Aug 6** — **Executing the review.** A three-mode task room, conflict-safe event stores under the busiest records, and a control-plane doctor that found a real regression in its own first pass. A no-write routing contract gate goes in front of every capture entrance and immediately catches three defects that had been shipping silently.
+- **Aug 7–8** — **The build queue becomes a machine.** Four back-to-back sessions drain the column from 48 cards to zero, and "work the queue" is codified to mean the whole column.
+- **Aug 7–16** — **Going public, round two.** The dev-cycle kanban becomes the second public plugin release, under a new standard: every release ships a guide written for humans and agents together, with screenshots only ever captured from the fictional demo vault. One history-wide privacy gate — working tree plus every reachable commit, with an adversarial self-test — runs identically at manual check, pre-push, and CI. When it flagged metadata in already-published history, the history was rewritten through the live gate; the check was never weakened.
+- **Aug 8–12** — **The council becomes a mastermind.** Coach seats grow into CRM dossiers; session notes mint commitments with owners (a coach's own promises don't count as the owner's kept word); and AI seats stop answering from a summary — each ask spawns a read-only agent that investigates the whole vault from the server.
+- **Aug 10** — **Select gets its own phone line.** A native iMessage identity on a second server account, every outbound word audited in one stream (including refused sends — an audit that hides blocked attempts isn't an audit), and conversation becomes the default door on every chat channel: nine measured seconds from text to grounded reply.
+- **Aug 10–15** — **The household loop.** A 5 AM task email to the spouse with tap-to-reply completion buttons, mapped by per-send manifest to exact vault lines; the weekly family agenda moves to Friday and closes its loop — authenticated replies from either spouse append to the exact agenda note.
+- **Aug 12** — **The monorepo reckoning.** A content-level audit finds five branches of real work that never merged while the manifests read *higher* version numbers than the branches they were missing. New law: version numbers are not merge state.
+- **Aug 12–16** — **The bar is indistinguishability.** Routing gaps stop being patched with trigger words — a schema-bound intent pass parses meaning while deterministic doors stay the only executors, and misses become regression fixtures. A texted photo that "came through blank" exposes that the messaging placeholder character isn't whitespace (every emptiness guard was dead code); a day of mishandled texts traces to a daemon running three-day-old code. The owner names the bet: the conversation spine is the future, and the bar is not being able to tell Select's chat from a first-class one.
+- **Aug 15–16** — **Finance, transaction-deep.** Every aggregated figure on the finance surfaces now clicks through to its exact rows; the retailer's twelve thousand item lines are AI-categorized for under a dollar, decomposing a giant "shopping" bucket into what was actually bought; two hundred scanned checks get names with privacy-bounded evidence images.
+- **Aug 16** — **The multi-agent review.** Three different AI engines audit the same estate, critique each other's reviews, and merge into one plain-language decision desk — rewritten so every item states objectives and side effects in the owner's language, build specs folded separately. The desk's checked items are executed the same night.
+- **Aug 11–19** — **Ship, measure, iterate — in miniature.** A Bible study subsystem ships; the first single-app review grades it without mercy (nine for records architecture, one for lived adoption — the usage ledger doesn't flatter); and its first roadmap feature ships from that verdict.
+
+> *Lesson kept: code on disk is not code in memory — a daemon that never reloads can quietly eat every message for three days.*
+
 ---
 
 ## Mistakes, kept on purpose
@@ -89,28 +109,34 @@ The timeline's reflection section records what went wrong, because the correctio
 - Every AI call failed silently for 21 hours while all health checks stayed green — health now means the *work* succeeded, not that the process ran.
 - A cleanup script truncated a live queue file before reading it; the restore came from that morning's automatic backup, and the incident report shipped in the changelog alongside the fix.
 - Live credentials were found sitting in an old daily log — scrubbed, revoked, and turned into publisher-side guards so the same leak can never reach a public page.
+- An import that parsed twenty thousand rows with zero exceptions captured no money at all — the aliases predated the export format, so a "clean" run was financially empty.
+- A chat daemon ran three-day-old code because a deploy never restarted it — the intent router was enabled on disk but never loaded. It now watches its own sources and reloads itself.
+- A messaging platform's attachment placeholder isn't whitespace, so every "empty message" guard was dead code — photos read as blank, and voice memos had silently never fired since shipping.
+- The new privacy gate's first pass over already-published history found personal metadata in seven public commits — fixed by rewriting the public history through the live gate, never by weakening the check.
+- A shipped feature went unnoticed for a week because the host app's own stylesheet out-cascaded its checkboxes — "never built" and "renders invisibly" file identical bug reports.
+- The lived-use metric was counting the agent's own verification footsteps as evidence of the owner's use — any metric meant to measure the human must be deaf to the agent.
 
 ## By the numbers
 
-All live counts from the real system, August 2, 2026:
+All live counts from the real system, August 19, 2026:
 
 **The record**
-- **574** changelog entries — every ship, logged by the agent that shipped it
-- **233** Dev Dashboard cards: **104** reviewed, **35** *lived* (proven by seven-plus days of real use), **51** shipped awaiting review, **21** honestly killed (not-sold or rejected)
-- **23** session debriefs · **114** timeline entries across **44** narrative arcs
+- **785** changelog entries — every ship, logged by the agent that shipped it
+- **417** Dev Dashboard cards: **206** reviewed, **52** *lived* (proven by seven-plus days of real use), **72** shipped awaiting review, **46** honestly killed (not-sold or rejected)
+- **66** session debriefs · **160** timeline entries across **58** narrative arcs
 
 **The build**
-- **19** plugins in one monorepo — down from 21, because retirement is a feature
+- **20** plugins in one monorepo, from **~48,000** lines of agent-written source
 - **8** shared agent skills, one store, read live by every agent
-- **1** public plugin release, and this showcase — the only two public surfaces, by design
+- **2** public plugin releases and this showcase — the only public surfaces, by design, each behind a history-wide privacy gate
 
 **The life inside it**
-- **~11,000** files in the vault · **220** daily logs
-- **2,693** captured media items as native notes
-- **144** people records · **77** projects under cockpit management
+- **~16,000** files in the vault (about 8,000 of them Markdown notes) · **234** daily logs
+- **2,847** captured media items as native notes
+- **145** people records · **57** projects under management
 
 **The runtime**
-- **19** scheduled jobs on the home server, each with a heartbeat — plus a second-machine watcher and an external dead-man's switch watching the watchers
+- **33** scheduled jobs on the home server, each with a heartbeat — plus a second-machine watcher and an external dead-man's switch watching the watchers
 - **2** machines · **N** interchangeable agents · **1** source of truth
 - One AI budget governor: **$10/month** with a hard stop — the entire assistant layer runs inside it, and un-costed calls are estimated so the cap can't be blinded
 
