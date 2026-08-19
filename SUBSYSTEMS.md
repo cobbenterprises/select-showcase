@@ -44,6 +44,28 @@ Select has its own email address — and, since August, its own native iMessage 
 
 ![Comms](media/comms-system.png)
 
+## Select Routing
+
+The layer that makes every channel one channel. Whether a message arrives as a Siri dictation, an iMessage, a Telegram chat, a quick-capture line typed on the phone, an emailed instruction, or a sentence inside a recorded thinking session, it funnels into the same parse-and-route core — **Select Routing** — and behaves identically. A voice memo is a text that started as breath; the owner should never have to remember which surface understands which phrasing.
+
+```mermaid
+flowchart LR
+    voice["🎙 Voice<br/>Siri · dictation · voice memos"] --> core
+    chat["💬 Chat<br/>iMessage · Telegram"] --> core
+    cap["⌨️ Quick capture<br/>desktop · phone"] --> core
+    mail["✉️ Email<br/>instructions"] --> core
+    think["🧠 Thinking Time<br/>transcripts"] --> core
+    core["Select Routing<br/>words fast path → schema-bound intent parse"]
+    core --> doors["Deterministic doors<br/>task · agenda · calendar · person ·<br/>property · finance · dev card · commitment"]
+    core --> convo["Conversation<br/>the default door"]
+```
+
+The design has three load-bearing rules:
+
+- **Words are a fast path, the model is the parser, the doors stay deterministic executors.** Cheap word-matching routes the obvious cases free; on a miss, a schema-bound intent pass names a door from the closed set and fills its slots — it never gets to write anything itself. Every write goes through the same deterministic primitives, person resolution never involves a model, and a trust gate means only a hand-marked inner circle can be matched by bare first name. Anything not command-shaped falls through to conversation, so a question is answered instead of mis-filed.
+- **Channel parity is a hard rule, enforced by a gate.** One shared vocabulary and one fixture suite pin two synchronized implementations — server-side (voice, chat, email) and in-app (capture surfaces) — and a release gate replays **350+ fixture checks across twenty channels, in both implementations, with no writes and no network**. A routing behavior change that lands in one channel and not the others fails the release.
+- **Misses become fixtures, never vocabulary.** When a message takes the wrong door, the fix is not another trigger word (that buys one phrasing and leaves the failure class alive) — the correction is pinned as a regression fixture that both implementations must pass forever. Every routed action has a deterministic undo, and new doors ship behind kill switches that are rollbacks, not waiting periods.
+
 ## AI Router
 
 The spend and steering console for every AI call in the ecosystem. One shared config decides which model serves each surface (brief, triage, voice, test calls); a budget governor warns, downshifts to a cheaper model, and hard-stops; and every call lands in a shared ledger with its cost — so "add another AI surface" is a calm decision instead of a gamble. Spend readouts also surface in the Comms system console.
