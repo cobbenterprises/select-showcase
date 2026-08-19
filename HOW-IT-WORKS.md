@@ -42,6 +42,16 @@ Select's unit of construction is the **subsystem**:
 
 A subsystem is a UI the human uses, files that hold its state (readable and editable outside the plugin forever), and a scripted entry point an agent can call. The Dev Dashboard, the Comms gateway, the Media Log, Finances, and Intentions are all this same shape. When the third one appeared, the pattern got a name; new capabilities are now commissioned *as* subsystems.
 
+## One routing brain, channel-agnostic by construction
+
+Every way of talking to the system — Siri dictation, iMessage, Telegram, a quick-capture line on the phone, an emailed instruction, a sentence in a recorded thinking session — funnels into a single parse-and-route layer, **Select Routing**, before anything is written anywhere. The channels are mouths; the brain is shared. That's a construction decision, not a convention:
+
+- **One route core, not N parsers.** Chat transports call the same routing function; a new channel must plug into it, never fork it. The alternative — per-channel routing that drifts one bugfix at a time — is the failure mode the rule exists to kill.
+- **Deterministic executors under a model parser.** Word-matching handles the obvious cases for free; a schema-bound intent pass interprets the rest, but can only *name* a door from a closed set and fill its slots. Writes happen exclusively through the doors' own primitives; person resolution and the first-name trust gate never involve a model; non-commands default to conversation.
+- **Parity is enforced, not hoped for.** The layer exists as two synchronized implementations — server-side for voice/chat/email, in-app for capture surfaces — pinned to one shared vocabulary and one fixture suite. A release gate replays 350+ fixture checks across twenty channels in both implementations (no writes, no network) and fails the release on any divergence. When the owner corrects a mis-route, the correction becomes a fixture in that suite — behavior is hardened by regression pins, never by growing word lists.
+
+The payoff is the product bar this system is now measured against: for routine commands, notes, and tasks, you shouldn't be able to tell which channel you're in — because underneath, there is only one.
+
 ## Agents as the engineering team
 
 The distinctive part of Select isn't the plugins — it's who built them and how.

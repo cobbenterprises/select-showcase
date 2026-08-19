@@ -18,6 +18,7 @@ Every one of these is a live surface used daily, not a demo:
 | **Select Tasks + Board** | Task app over plain Markdown checkboxes; a kanban with a **Select lane** — drag a card there and an agent drafts the work within five minutes |
 | **Media Log** | Always-on capture pipeline: share a link from a phone, a server ingests it into a browsable 2,800+ item library with live embeds |
 | **Comms** | Select has its own email address and its own iMessage line — triaged mail gateway, missed-message radar, and free-form conversation as the default door on every chat channel |
+| **Select Routing** | One channel-agnostic parse-and-route brain behind every channel: the same words do the same thing texted, spoken, typed, or emailed — deterministic doors, a schema-bound intent parser, and mis-routes pinned as regression fixtures |
 | **AI Router** | Every AI call in the ecosystem priced, attributed, and budget-capped — model steering per surface, spend at a glance, a governor with a hard stop |
 | **Calendar + People** | Read-only family calendar layer; a CRM that harvests @mentions from notes instead of demanding data entry |
 | **Voice** | Spoken morning brief; "Hey Siri, Ask Select" from a phone over a secured tunnel; dictated thinking sessions that file themselves |
@@ -53,6 +54,7 @@ The novelty isn't any single feature. It's the working relationship:
 - **Agents are the engineering team.** Nearly every plugin, runner, and pipeline was designed, written, deployed, and verified by AI agents (multiple, interchangeable, across two machines) directed in plain conversation. The human's role is product owner: pick, reject, redirect.
 - **The process is itself a subsystem.** Recommendations from agents land on a kanban board the moment they're made. Nothing ships without a written card note and verification evidence. A one-record-per-event rule keeps a single source of truth for every change.
 - **The vault is the substrate.** Everything is plain Markdown files in folders. Every "app" is a view over files the owner could edit by hand. No databases to migrate away from, no lock-in — the system could be abandoned tomorrow and the notes would still be notes.
+- **The channels are mouths; the brain is shared.** Voice, chat, email, and capture all funnel through one routing layer — **Select Routing** — where a model parses intent but only deterministic doors can write, and a release gate replays 350+ fixture checks across twenty channels in both of its synchronized implementations. The same sentence behaves identically everywhere, by construction.
 - **Autonomy is structural, not promised.** Agents draft, never send. Message bodies are data, never instructions. Outbound channels are allowlisted and double-gated. Every AI call is priced, attributed, and budget-capped.
 
 How the architecture works: **[HOW-IT-WORKS.md](HOW-IT-WORKS.md)**
