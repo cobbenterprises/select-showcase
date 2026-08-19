@@ -32,7 +32,7 @@ The Select lane, end to end — a card enters the lane, Select drafts the work, 
 
 ## Media Log
 
-The oldest subsystem and the origin of the whole project. Share a link from any device; an always-on server captures it — text first, so a crash can never drop a post — into one durable Markdown note per item. A library surface browses 2,500+ items with live embeds, tag/source/month filters, and per-item actions. A 1,517-post saved-media history was imported through the same production writer, inheriting every guarantee the pipeline had earned.
+The oldest subsystem and the origin of the whole project. Share a link from any device; an always-on server captures it — text first, so a crash can never drop a post — into one durable Markdown note per item. A library surface browses 2,800+ items with live embeds, tag/source/month filters, and per-item actions. A 1,517-post saved-media history was imported through the same production writer, inheriting every guarantee the pipeline had earned.
 
 ![Media Library](media/media-library.png)
 
@@ -40,7 +40,7 @@ The oldest subsystem and the origin of the whole project. Share a link from any 
 
 ## Comms
 
-Select has its own email address. Inbound mail hits a gateway on the server: allowlisted senders → AI triage → routed to schedule ingestion, note capture, or ignore — every decision audited, and message bodies treated as data, never instructions. **Missed Messages** watches iMessage for owed replies, resolves phone numbers to real names, and offers inline reply drafts delivered by an isolated, allowlisted sender. A channel registry governs every channel's enabled/reply flags in one place.
+Select has its own email address — and, since August, its own native iMessage line, running under a second account on the server so it texts from a real identity. Inbound mail hits a gateway on the server: allowlisted senders → AI triage → routed to schedule ingestion, self-filing to known destinations, note capture, or ignore — every decision audited, and message bodies treated as data, never instructions. On the chat channels, **conversation is the default door**: anything not command-shaped gets a grounded, free-form reply (with photos read into words at the transport edge, and voice memos transcribed locally), while an Outbound audit shows every message Select sends — including the refused ones. **Missed Messages** watches iMessage for owed replies, resolves phone numbers to real names, and offers inline reply drafts delivered by an isolated, allowlisted sender. A channel registry governs every channel's enabled/reply flags in one place.
 
 ![Comms](media/comms-system.png)
 
@@ -66,7 +66,7 @@ Three escalating layers: the morning **Daily Brief** arrives as spoken audio (wi
 
 ## Finances
 
-Raw institution exports drop into a watched inbox folder; adapters normalize them into an atomic ledger — two years of transactions, every account balance, every investment position. Surfaces: net worth by institution with business-account toggles, month signals, income, and a stock benchmark seeded with true purchase lots reconciled to the penny, judged against an index from actual entry dates. Went from foundation to living balance sheet through nine versions in one afternoon.
+Raw institution exports drop into a watched inbox folder; adapters normalize them into an atomic ledger — two years of transactions, every account balance, every investment position. Surfaces: net worth by institution with business-account toggles, month signals, income, and a stock benchmark seeded with true purchase lots reconciled to the penny, judged against an index from actual entry dates. Since August it's transaction-deep: every aggregated figure clicks through to its exact rows, the owner's own knowledge (payees, categories, rates the provider won't report) overlays the ledger at read time without ever rewriting it, and itemized retailer charges decompose into AI-categorized line items — with every view still reconciling to the cent.
 
 ![Finances](media/finances-overview.png)
 
@@ -96,9 +96,10 @@ The tour above is the daily core, not the full roster. Sharing the same kit, sty
 
 ![Projects](media/projects.png)
 
-- **Select Projects** — the project cockpit (shown above): a heartbeat pulse per project, an importance × momentum map, and a triage deck where every stalled project leaves with a decision.
-- **Podcast Runner** — submit an episode URL, get a staged, highlighted summary note with per-run cost accounting.
-- **Select Docs** — OCR-first document intake: receipts, invoices, and scanner output, staged, routed, and searchable.
-- **The Coaching Council** — every coach a seat with visible state, a unified ledger of sessions and commitments, and an ask-the-table mode where live coaches answer from their own session notes and a moderator synthesizes a verdict.
-- **Server Watch** — the home server takes hourly screenshots of its own console and runs changed frames through a vision check, because status files only report what code thought to measure.
-- **The Style Guide** — Select's visual languages documented side by side with live specimens, so fifteen plugins read as one product.
+- **The project cockpit** (shown above) — a heartbeat pulse per project, an importance × momentum map, and a triage deck where every stalled project leaves with a decision; now one mode of the Intentions room, its third home found after shipping standalone.
+- **Podcast Runner** — submit an episode URL, get a staged, highlighted summary note with per-run cost accounting — opening with a Listen Decision brief: listen in full, listen to these timestamped stretches, or skip, and what you're not missing.
+- **Select Docs** — OCR-first document intake: receipts, invoices, and scanner output, staged, routed, and searchable — with quote deadlines extracted into a standing expired-decisions queue.
+- **The Mastermind** — the coaching portal grown into a commitment system: every coach a CRM dossier with sessions, prep, and open promises; commitments have owners (a coach's own promises don't count as the owner's kept word); and AI seats spawn read-only agents that investigate the whole vault from the server.
+- **Select Bible** — a Bible study subsystem: reading tracks, a free-reading interface with verse-tagged notes, and sermon capture — deliberately AI-free in version one, and the first app graded by the new single-app review format.
+- **Server Watch** — the home server takes hourly screenshots of its own console and runs changed frames through a perceptual-diff-then-vision check, because status files only report what code thought to measure.
+- **The Style Guide** — Select's visual languages documented side by side with live specimens, so twenty plugins read as one product.

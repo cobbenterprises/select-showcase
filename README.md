@@ -2,7 +2,7 @@
 
 **A personal operating system, built inside an Obsidian vault, operated by AI agents.**
 
-Select is not a product. It's one person's working life — tasks, calendar, people, media, finances, goals, communications — run through a single 10,000-note Markdown vault, with fifteen-plus custom plugins as the interface and AI agents as the engineering team, the operations staff, and the librarian.
+Select is not a product. It's one person's working life — tasks, calendar, people, media, finances, goals, communications — run through a single Markdown vault of some 16,000 files, with twenty custom plugins as the interface and AI agents as the engineering team, the operations staff, and the librarian.
 
 This repo contains no code. It's a demonstration: screenshots, recordings, architecture notes, and the real, dated history of how the system was built. The short version of that history is the reason this repo exists — **the application layer, the server runtime, the agent workflow, and most of the subsystems below were built in about three weeks of evenings**, through conversation.
 
@@ -16,8 +16,8 @@ Every one of these is a live surface used daily, not a demo:
 |---|---|
 | **Select Home** | Native homepage: app dock, capture line, daily verse with one-tap reflection journaling |
 | **Select Tasks + Board** | Task app over plain Markdown checkboxes; a kanban with a **Select lane** — drag a card there and an agent drafts the work within five minutes |
-| **Media Log** | Always-on capture pipeline: share a link from a phone, a server ingests it into a browsable 2,500+ item library with live embeds |
-| **Comms** | Select has its own email address and phone presence — triaged mail gateway, missed-message radar over iMessage with named threads and in-app replies |
+| **Media Log** | Always-on capture pipeline: share a link from a phone, a server ingests it into a browsable 2,800+ item library with live embeds |
+| **Comms** | Select has its own email address and its own iMessage line — triaged mail gateway, missed-message radar, and free-form conversation as the default door on every chat channel |
 | **AI Router** | Every AI call in the ecosystem priced, attributed, and budget-capped — model steering per surface, spend at a glance, a governor with a hard stop |
 | **Calendar + People** | Read-only family calendar layer; a CRM that harvests @mentions from notes instead of demanding data entry |
 | **Voice** | Spoken morning brief; "Hey Siri, Ask Select" from a phone over a secured tunnel; dictated thinking sessions that file themselves |
@@ -64,11 +64,11 @@ How the partnership works — and how it stays agent-independent: **[ENGINEERING
 
 The system kept its own records as it was built — a changelog of every ship, and a narrative timeline distilled from it. The sanitized public cut is here:
 
-**[TIMELINE.md](TIMELINE.md)** — from a named vision (December 2025), through a capture pipeline and months of ecosystem research, to a five-day sprint in July 2026 in which the vault became an operating system — the week it had to prove it could be lived in, and the fortnight after, when it went public, hardened itself, and learned to start the conversation.
+**[TIMELINE.md](TIMELINE.md)** — from a named vision (December 2025), through a capture pipeline and months of ecosystem research, to a five-day sprint in July 2026 in which the vault became an operating system — the week it had to prove it could be lived in, the fortnight it went public and hardened itself, and the seventeen days after that, when it went transaction-deep, learned to review itself with three different AI engines at once, and got a phone line of its own.
 
 It includes the mistakes, kept on purpose.
 
-And the scale is verifiable, not vibes: **511** changelog entries, **155** dev-cycle cards (96 of them through the owner's review room), **21** plugins from **~31,000** lines of agent-written source, **2,655** captured media items, **20** scheduled server jobs — all of it operated on a **$10/month** AI budget with a hard stop. Full stats in the [timeline](TIMELINE.md#by-the-numbers).
+And the scale is verifiable, not vibes: **785** changelog entries, **417** dev-cycle cards (206 of them through the owner's review room), **20** plugins from **~48,000** lines of agent-written source, **2,847** captured media items, **33** scheduled server jobs — all of it operated on a **$10/month** AI budget with a hard stop. Full stats in the [timeline](TIMELINE.md#by-the-numbers).
 
 ---
 
