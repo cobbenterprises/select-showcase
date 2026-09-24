@@ -41,6 +41,12 @@ Every one of these is a live surface used daily, not a demo:
     <td width="25%"><a href="https://cobbenterprises.github.io/select-showcase/SUBSYSTEMS.html#intentions"><img src="media/intentions-review.png" alt="Intentions"/><br/><sub><b>Intentions</b></sub></a></td>
     <td width="25%"><a href="https://cobbenterprises.github.io/select-showcase/SUBSYSTEMS.html#dev-dashboard"><img src="media/dev-dashboard.png" alt="Dev Dashboard"/><br/><sub><b>Dev Dashboard</b></sub></a></td>
   </tr>
+  <tr>
+    <td width="25%"><a href="https://cobbenterprises.github.io/select-showcase/SUBSYSTEMS.html#select-media"><img src="media/select-media.png" alt="Select Media"/><br/><sub><b>Select Media</b></sub></a></td>
+    <td width="25%"><a href="https://cobbenterprises.github.io/select-showcase/SUBSYSTEMS.html#select-learn"><img src="media/select-learn.png" alt="Select Learn"/><br/><sub><b>Select Learn</b></sub></a></td>
+    <td width="25%"><a href="https://cobbenterprises.github.io/select-showcase/SUBSYSTEMS.html#also-in-the-family"><img src="media/marketing-results.png" alt="Select Marketing"/><br/><sub><b>Marketing</b></sub></a></td>
+    <td width="25%"><a href="https://cobbenterprises.github.io/select-showcase/SUBSYSTEMS.html#select-menu"><img src="media/select-menu.png" alt="Select Menu"/><br/><sub><b>Select Menu</b></sub></a></td>
+  </tr>
 </table>
 
 Every pixel above is real plugins over fictional data: screenshots come from a sanitized demonstration vault (a fictional family, fictional finances, fictional messages), never from the live system.
