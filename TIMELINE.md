@@ -2,8 +2,8 @@
 
 Select keeps its own history: every ship goes into a changelog, and the changelog is periodically distilled into a narrative timeline. This is the public cut of that document — same events, same dates, with personal details removed.
 
-**Span:** December 27, 2025 → August 19, 2026.
-**Shape:** a vision, six months of quiet groundwork, three weeks in which nearly everything below was built, a fortnight of facing outward and hardening — then seventeen days of depth: truth-telling reviews, transaction-deep finances, and a conversation spine with its own phone line.
+**Span:** December 27, 2025 → September 23, 2026.
+**Shape:** a vision, six months of quiet groundwork, three weeks in which nearly everything below was built, a fortnight of facing outward and hardening — then seventeen days of depth: truth-telling reviews, transaction-deep finances, and a conversation spine with its own phone line — and five weeks of making that spine the only one, making the tests honest, and opening new rooms on top of it.
 
 ---
 
@@ -92,6 +92,27 @@ Less new territory, more truth. The system stopped adding rooms and started prov
 
 > *Lesson kept: code on disk is not code in memory — a daemon that never reloads can quietly eat every message for three days.*
 
+## Phase 8 — One spine, and tests that tell the truth (August 20 – September 23, 2026)
+
+The conversation bet from Phase 7 was cashed in: every chat path collapsed into one line, the router learned to be honest about what it had done, and the testing layer was rebuilt until a red result meant something. Then, with the spine trustworthy, new rooms opened.
+
+- **Aug 21–26** — **Main is production truth again.** Deployed plugins had drifted from the main branch — one release changelogged but never deployed, fixes stranded on unmerged branches. A convergence pass brings every deployed bundle to a byte-for-byte match with a fresh build of main, and a new rule makes agents prove their base tree matches the deployed bundle before editing anything.
+- **Aug 25** — **One prompt a day.** The morning brief, delivered by iMessage, becomes the only message Select starts on its own; push nudges retire. Before the switch, two live drills pass: a server reboot and a signed-out messaging account.
+- **Aug 26** — **One chat spine.** The Telegram channel is retired — switched off in the registry, restorable in two steps — and iMessage becomes the single chat line, with a daily self-ping proving delivery and a sweep that recovers texts that died while the line was down. One working session produces eight waves of routing upgrades: a per-door intent schema so the model can't invent slots, receipts that name where a write landed, a reply contract, memory that reaches past the session with approval, split dictation stitched back into one message, and a glossary of the owner's own shorthand.
+- **Aug 26–27** — **A language of its own.** The **Select Lexicon** collects the words coined with the agents — modes of thinking, component names, retired terms — first mined from 130+ agent transcripts; a naming door adds a row whenever something is named in any channel.
+- **Aug 30** — **Time windows gate safety, never comprehension.** Every message is read against its thread's recent history, so late replies and corrections still land after timers expire. A correction door ("No — …" undoes and re-routes), a guess band that keeps uncertain items out of canonical records, and an unclear-message contract: anything misunderstood is filed verbatim, with a task that checks itself off once a replay handles it. Document attachments parse through one shared engine on email and chat alike. The weekly household meeting gets a live mode of its own.
+- **Aug 31 – Sep 1** — **A third engine joins the review.** Comprehensive Review #6 is written by a third AI vendor's model, with a thesis the others hadn't named: *the conversation is a channel; others made it a workplace.* Nine recommendations, each with a prototype image.
+- **Sep 7** — **Beyond one sender.** The iMessage line grows a bounded household access tier below the owner — shared-life records and conversation with isolated memory, but never code, configuration, money, or the owner's private thread — pinned in the routing contract, with a read-only audit panel that shows every sender's tier and never a message body. The morning task email becomes two-way: *Done* and *Not mine* per task, parsed with no AI call.
+- **Sep 8** — The media library gets capture-time tag suggestions from a closed vocabulary (budget-capped, kill-switched, fail-open) and a keyboard-driven sweep through the untagged backlog.
+- **Sep 8–17** — **Accounting-grade agency.** A rental-business surface ships read-only with drill-through to every ledger line, and a long records reconstruction runs across many sessions and two AI engines through a shared handoff file. The rules it set: every external write backed up first, batched, recorded in a hash-chained audit log, and undoable by batch or entry; corrections held as unposted proposals until one whole-picture review covers them all; evidence kept with checksums and proven by independent verifier scripts.
+- **Sep 19** — **Verification becomes infrastructure.** A nightly self-test proves agents can still drive the server's app and names the step that broke when they can't; a shared papercuts log records every tooling friction for every engine; and the rule is written down that *a broken verification path is the task, not a blocker to report.* The same day, a review of the text channel finds the intent parser had failed on every call for ten days after the model provider began rejecting its response schema — rebuilt the same day.
+- **Sep 19** — **The write fence.** An unsandboxed test had been filing fake tasks into the owner's real daily log whenever the suite ran, while four separate change records waved it off as a "pre-existing failure." Tests now run behind a fence that fails any write to the real vault by name, and the suite goes fully green for the first time in four weeks.
+- **Sep 19–20** — **Select Learn.** Every subject being studied becomes a class — syllabus, notebook, timeline, and tagged captures in one readable note — fed identically from text, voice, quick capture, and the page. First version to eleventh in two days.
+- **Sep 20** — **Select Media.** A watchlist, a watched log, streaming subscriptions, a music shelf, and **Tonight**: three titles playable right now on services already paid for. A *started* door lets "started watching X" work from any channel, and receipts stop confirming completions that never wrote anything.
+- **Sep 20–23** — **Outreach gets a room.** Select Marketing tracks one question for a professional practice's social presence: does posting start conversations? The same week, the cloud storage fills and workstation edits silently stop reaching the server and the phone for three days — until a storage-quota check, now the first thing agents run when another machine looks stale, named the cause.
+
+> *Lesson kept: a green test suite with a known failure is a red test suite — and a send counter is not a delivered message.*
+
 ---
 
 ## Mistakes, kept on purpose
@@ -115,31 +136,40 @@ The timeline's reflection section records what went wrong, because the correctio
 - The new privacy gate's first pass over already-published history found personal metadata in seven public commits — fixed by rewriting the public history through the live gate, never by weakening the check.
 - A shipped feature went unnoticed for a week because the host app's own stylesheet out-cascaded its checkboxes — "never built" and "renders invisibly" file identical bug reports.
 - The lived-use metric was counting the agent's own verification footsteps as evidence of the owner's use — any metric meant to measure the human must be deaf to the agent.
+- A message send reported success while the messaging account was signed out, and nothing arrived. Delivery is now proven by a daily round trip to itself, never by a send counter.
+- A merge failure hidden inside a shell pipeline left a release tag pointing at unmerged code, so the deploy shipped nothing. Every step's exit code is checked on its own now, and every deploy is hash-verified.
+- A routing "dry run" still wrote a record through a fallback path — found by a verification probe; dry runs are now write-free end to end.
+- The intent parser failed on every call for ten days after the provider began rejecting its response schema. The fallbacks were good enough that nothing was lost — which is exactly why nobody noticed.
+- A test wrote fake tasks into the real daily log for two weeks while four change records called it a "pre-existing failure." Now a test that touches the real vault fails by name, and a known red is treated as red.
+- The system confirmed task completions that had never written anything. Receipts now come from the write result itself; ambiguity refuses instead of guessing.
+- A plugin method named `load()` silently overrode the host app's own lifecycle hook. The build and smoke tests passed; only a live runtime check on the server caught it.
+- The cloud storage filled, and for three days edits made on the workstation silently never reached the server or the phone — agents now check the quota first whenever another machine looks stale.
 
 ## By the numbers
 
-All live counts from the real system, August 19, 2026:
+All live counts from the real system, September 23, 2026:
 
 **The record**
-- **785** changelog entries — every ship, logged by the agent that shipped it
-- **417** Dev Dashboard cards: **206** reviewed, **52** *lived* (proven by seven-plus days of real use), **72** shipped awaiting review, **46** honestly killed (not-sold or rejected)
-- **66** session debriefs · **160** timeline entries across **58** narrative arcs
+- **935** changelog entries — every ship, logged by the agent that shipped it
+- **538** Dev Dashboard cards: **210** reviewed, **52** *lived* (proven by seven-plus days of real use), **119** shipped awaiting review, **50** honestly killed (not-sold or rejected)
+- **110** session debriefs · **160** timeline entries across **58** narrative arcs
 
 **The build**
-- **20** plugins in one monorepo, from **~48,000** lines of agent-written source
-- **8** shared agent skills, one store, read live by every agent
+- **24** plugins in one monorepo, from **~59,000** lines of agent-written source — **23** of them on the phone
+- **9** shared agent skills, one store, read live by every agent
+- **679** routing-contract checks across **31** channels, replayed before every release
 - **2** public plugin releases and this showcase — the only public surfaces, by design, each behind a history-wide privacy gate
 
 **The life inside it**
-- **~16,000** files in the vault (about 8,000 of them Markdown notes) · **234** daily logs
-- **2,847** captured media items as native notes
-- **145** people records · **57** projects under management
+- **~19,000** files in the vault (about 9,000 of them Markdown notes) · **244** daily logs
+- **3,168** captured media items as native notes
+- **197** people records · **61** projects under management
 
 **The runtime**
-- **33** scheduled jobs on the home server, each with a heartbeat — plus a second-machine watcher and an external dead-man's switch watching the watchers
+- **35** scheduled jobs on the home server, each with a heartbeat — plus a second-machine watcher and an external dead-man's switch watching the watchers
 - **2** machines · **N** interchangeable agents · **1** source of truth
 - One AI budget governor: **$10/month** with a hard stop — the entire assistant layer runs inside it, and un-costed calls are estimated so the cap can't be blinded
 
 ---
 
-*Distilled from the system's own changelog and narrative timeline, updated August 2026.*
+*Distilled from the system's own changelog and narrative timeline, updated September 2026.*
