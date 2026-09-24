@@ -42,9 +42,13 @@ The oldest subsystem and the origin of the whole project. Share a link from any 
 
 The Media Log keeps what was *captured*; **Select Media** keeps what's *wanted*. A poster-gallery watchlist, a watched log grouped by month, a music shelf where each cover opens straight in the music service, and on/off tiles for the streaming subscriptions the household actually pays for. Posters and where-to-stream data come from a free, keyless lookup — no AI cost. The headline is **Tonight**: up to three titles you can play right now on services you already have, with a *deal again* button — and the same question texted ("what should we watch tonight?") gets the same answer. Things to watch are plain bullets in a note, never tasks, from every channel.
 
+![Select Media](media/select-media.png)
+
 ## Select Learn
 
 Every subject the owner is studying becomes a **class**: one readable note holding a syllabus, a notebook, a study timeline, and every Media Log capture tagged to it. An *In process* strip shows what's being read or watched right now, straight from the note itself. Every add is undoable, there are no AI calls in the surface, and it works on the phone. The channels share one decision about what an input does to a class — "started reading X" or "finished X" texted, spoken, typed into Home, or entered on the page lands the same line in the same format, and a contract check fails the release if any channel bypasses the class writer. Questions asked about a course by text or voice are saved with their full answers. It went from first version to eleventh in two days, each version from a real use.
+
+![Select Learn](media/select-learn.png)
 
 ## Comms
 
@@ -130,7 +134,10 @@ The tour above is the daily core, not the full roster. Sharing the same kit, sty
 - **The project cockpit** (shown above) — a heartbeat pulse per project, an importance × momentum map, and a triage deck where every stalled project leaves with a decision; now one mode of the Intentions room, its third home found after shipping standalone.
 - **Podcast Runner** — submit an episode URL, get a staged, highlighted summary note with per-run cost accounting — opening with a Listen Decision brief: listen in full, listen to these timestamped stretches, or skip, and what you're not missing.
 - **Select Docs** — OCR-first document intake: receipts, invoices, and scanner output, staged, routed, and searchable — with quote deadlines extracted into a standing expired-decisions queue.
-- **Select Marketing** — a hub for a professional practice's social presence, organized around one question: *does posting start conversations?* This week, pipeline, assets (with a tag library any agent can read), brand, outputs, results.
+- **Select Marketing** — a hub for a professional practice's social presence, organized around one question: *does posting start conversations?* This week, pipeline, assets (with a tag library any agent can read), brand, outputs, results. The Results screen answers the question directly — every post on both platforms, never summing measures that don't mean the same thing, with conversations started as the column that matters:
+
+  ![Select Marketing results](media/marketing-results.png)
+
 - **The rental-business surface** — a small rental business shown in six rooms (health, performance, rent roll, cash and debt, decisions, records), computed read-only from retained accounting exports so every number drills through to ledger lines. Its only write is the expected rent. The records work behind it ran across many sessions and two AI engines through a shared handoff file — checksummed evidence, independent verifier scripts, every external write backed up and undoable.
 - **The Select Lexicon** — the language built with the agents (modes of thinking, shorthand, component words, retired words), first mined from 130+ agent transcripts; a naming door adds a row whenever something gets named in any channel. With the Style Guide (the look) and the UX patterns (the behavior), it's the third reference: the words.
 - **The Mastermind** — the coaching portal grown into a commitment system: every coach a CRM dossier with sessions, prep, and open promises; commitments have owners (a coach's own promises don't count as the owner's kept word); and AI seats spawn read-only agents that investigate the whole vault from the server.
