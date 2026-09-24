@@ -152,7 +152,7 @@ All live counts from the real system, September 23, 2026:
 **The record**
 - **935** changelog entries — every ship, logged by the agent that shipped it
 - **538** Dev Dashboard cards: **210** reviewed, **52** *lived* (proven by seven-plus days of real use), **119** shipped awaiting review, **50** honestly killed (not-sold or rejected)
-- **110** session debriefs · **160** timeline entries across **58** narrative arcs
+- **110** session debriefs · **205** timeline entries across **73** narrative arcs
 
 **The build**
 - **24** plugins in one monorepo, from **~59,000** lines of agent-written source — **23** of them on the phone
