@@ -2,8 +2,8 @@
 
 Select keeps its own history: every ship goes into a changelog, and the changelog is periodically distilled into a narrative timeline. This is the public cut of that document — same events, same dates, with personal details removed.
 
-**Span:** December 27, 2025 → September 23, 2026.
-**Shape:** a vision, six months of quiet groundwork, three weeks in which nearly everything below was built, a fortnight of facing outward and hardening — then seventeen days of depth: truth-telling reviews, transaction-deep finances, and a conversation spine with its own phone line — and five weeks of making that spine the only one, making the tests honest, and opening new rooms on top of it.
+**Span:** December 27, 2025 → October 3, 2026.
+**Shape:** a vision, six months of quiet groundwork, three weeks in which nearly everything below was built, a fortnight of facing outward and hardening — then seventeen days of depth: truth-telling reviews, transaction-deep finances, and a conversation spine with its own phone line — five weeks of making that spine the only one, making the tests honest, and opening new rooms on top of it — and ten days of grading every room by whether it was actually used, then rebuilding what failed the test.
 
 ---
 
@@ -113,6 +113,26 @@ The conversation bet from Phase 7 was cashed in: every chat path collapsed into 
 
 > *Lesson kept: a green test suite with a known failure is a red test suite — and a send counter is not a delivered message.*
 
+## Phase 9 — Measured by use (September 23 – October 3, 2026)
+
+A new single-app review format stopped asking whether a surface worked and started asking whether it was *used*. The answers were humbling, and each one became a rebuild the same day. Underneath, the agents got the infrastructure to work in parallel, and the phone got a memory budget written into the rules.
+
+- **Sep 23** — **Built to capture; now build it to watch.** The media library's first app review measured opens, not saves: dozens captured a week, a handful ever opened, and a regex flag that had silently cut over 1,500 captures to their first line. "Build it all" shipped the same night as a watch-first rewrite — a lean-back Theater, a phone swipe feed, random Mixes, in-place video, thousands of thumbnails backfilled.
+- **Sep 23–26** — **The backlog comes due.** The owner had approved none of the agents' cards in a month, so six parallel agents wrote a plain-language keep-or-let-go verdict for each of 218 cards on one pre-ticked desk. Three days later, nineteen finished cards turned up invisible in a column the board doesn't define — for up to seven weeks, while its header read Healthy. The store now refuses unknown columns.
+- **Sep 23–28** — **Outreach goes live.** The marketing room publishes finished designs to the owner's professional and social pages through official APIs, one post per chosen time slot, and reads the results back onto each post. Before the first post, a check from the outside found the social app still in development mode — every connection check green, posts visible only to the owner. It was published, with its privacy and data-deletion pages hosted on this site.
+- **Sep 25–26** — **The asset room learns to listen.** Its review found no event had come through its own doors in two months, and a safety warning had kept firing for weeks after the problem was fixed. Version 2.0 shipped in six parallel lanes on one shared model in two languages, held equal by a parity gate: it now *hears* completion in checked tasks, payments, and filed papers, asks one question in the morning brief, then goes quiet. Misrouted messages on a real-history replay fell from 14 in 21 to 1.
+- **Sep 26** — **Field guides, and silent failures made loud.** Any reference work built for a subject the owner is studying now appears on the learning room's shelf and its class pages by itself — after a guide was found reachable only from text the app never renders (new rule: *a link counts only where the owner meets it*). The same evening, a verification replay spent the last of the AI credit and every channel failed silently; a credit gauge now checks balance and pace every ten minutes without spending anything, and names an outage everywhere the owner looks.
+- **Sep 28** — **The brief nobody answered.** The morning brief had been delivered 83 of 83 mornings and answered 0 of 34 times. In one day it became **Morning Home** — the brief leads the home screen all day, and the 5:45 text answers in plain words ("1 done, drop 3"). Taps and texts write the same records through twin action layers held byte-identical by shared fixtures, with an undo that refuses rather than damage anything written since. Delivery is now confirmed against the device's own message store, briefs expire instead of arriving late, and an email fallback covers outages.
+- **Sep 28** — **Parallel agents, parallel infrastructure.** Each agent thread now leases its own isolated app instance and vault clone on the home server — up to three at once, ready in about twelve seconds — so UI verification stops being single-file. The nightly off-site mirror, failing only on nights the laptop was closed, moved to the always-on machine. And three silent drifts were caught in one day: a lost git setting had disabled the deploy-parity gate, the text daemon reloaded on only two of its files, and the server's app was on a different release channel than the one the owner runs.
+- **Sep 27–29** — **The asset room learns to see.** Photos sent by text land on the right item's page; a photo of a label fills in make, model, and serial; every item leads with what it consumes — filter sizes, oil, fuel — and a close-up of the part confirms or corrects the spec. All of it runs on one existing vision pass whose fixed output lines are parsed by code, with nothing overwritten without a yes. Large unrecorded purchases from the ledger prompt "start a record?", loans show what's still owed, and official manuals were filed for twenty items.
+- **Sep 28–29** — **Texting it like texting a person.** "Delivered" now means the bridge confirmed it, and the always-on text service checks that new code compiles before it hot-reloads. A live probe found the AI provider's structured-output size limit (ten doors fit, twelve don't) and the contract now enforces it. Routing moved to a faster model tier with calendar and recent-activity context, splits one text carrying several things, and completes a job already logged instead of duplicating it — replayed against a month of real texts, it fixed every case the old router missed. The file-watch trigger behind incoming texts turned out never to fire; a persistent loop cut pickup from up to a minute to two or three seconds. Replies now survive only when every write is confirmed: an allowlist of success, never a blocklist of failure.
+- **Sep 29 – Oct 2** — **The land.** The property app gained a portal for the land itself: every map layer, historical aerials back to 1938, recorded walks, and survey lines in one frame, with tap-to-read elevation and soil — and a walkable field guide for finding an old survey's corners instead of paying for a new one. Research agents and recorded deeds traced the property's ownership back to its original federal land patent, with every source saved locally so dead links can't erase the record, and every inference marked as inferred.
+- **Oct 1–3** — **The phone has a ceiling.** The phone kept killing the app. A crash watch now records what was on screen when the operating system struck; an eighteen-pull-request memory audit rebuilt the fleet on a lighter shared kit; and a standing rule says every plugin change is built with the phone in mind. Two days later a shared picture kit drew every image at the size its spot needs — one library's decoded picture memory fell from 269 MB to 20 MB — guarded at build time and audited at phone size, because the first audit made pictures load *later* but never *smaller*.
+- **Oct 1–3** — **A family-history room.** The twenty-fifth plugin: one standard family-tree file, a query tool, and a tree, pedigree, migration map, and records app on desktop and phone. Every change carries an audit trail and a source; disagreeing sources stay open as questions with their evidence on each side; and "researched" is kept separate from "proven" — a link turns green only when an original record that states it has actually been read. Research agents search free public archives and digitized books directly, with real page citations and a refusal to look up living people.
+- **Oct 3** — **The day it names.** "Did X on Thursday" now lands in Thursday's log from every channel, while "dentist Thursday" stays in today's. Emails handed to the assistant stay visible until they are really filed — an already-filed one closes only with quoted proof from its destination — and identity and account numbers are masked in every piece of extracted document text.
+
+> *Lesson kept: delivered every morning and answered never is not working — measure whether a thing is used, not whether it ran.*
+
 ---
 
 ## Mistakes, kept on purpose
@@ -144,32 +164,40 @@ The timeline's reflection section records what went wrong, because the correctio
 - The system confirmed task completions that had never written anything. Receipts now come from the write result itself; ambiguity refuses instead of guessing.
 - A plugin method named `load()` silently overrode the host app's own lifecycle hook. The build and smoke tests passed; only a live runtime check on the server caught it.
 - The cloud storage filled, and for three days edits made on the workstation silently never reached the server or the phone — agents now check the quota first whenever another machine looks stale.
+- A media library was capturing dozens of saves a week and opening a handful — and a regex flag had silently cut over 1,500 captures to their first line.
+- A social app sat in development mode with every connection check green — posts would have been visible only to the owner. Visibility is now checked from the outside.
+- Nineteen finished cards sat invisible for weeks in a column the board didn't define, while its header said Healthy. The store now validates every column it's handed.
+- A verification replay spent the last of the AI credit, and every channel failed silently until a credit gauge was built — verification costs real money and needs a guard of its own.
+- Reminders were marked delivered when they were queued; one arrived nearly a day late. "Delivered" now comes from the bridge's confirmation, never the hand-off.
+- A data change broke the older plugin build the owner was actually running. Live data has to work with the deployed build, not just the one just built.
+- A phone memory audit made pictures load later but never smaller, and its checker measured layout rather than memory — the next audit measured the quantity that actually crashes the app.
+- Emails were reported handed off while none had been filed. An item now stays visible until its destination proves it arrived.
 
 ## By the numbers
 
-All live counts from the real system, September 23, 2026:
+All live counts from the real system, October 3, 2026:
 
 **The record**
-- **935** changelog entries — every ship, logged by the agent that shipped it
-- **538** Dev Dashboard cards: **210** reviewed, **52** *lived* (proven by seven-plus days of real use), **119** shipped awaiting review, **50** honestly killed (not-sold or rejected)
-- **110** session debriefs · **205** timeline entries across **73** narrative arcs
+- **1,146** changelog entries — every ship, logged by the agent that shipped it
+- **696** Dev Dashboard cards: **224** reviewed, **52** *lived* (proven by seven-plus days of real use), **222** shipped awaiting review, **57** honestly killed (not-sold or rejected)
+- **156** session debriefs · **242** timeline entries across **87** narrative arcs
 
 **The build**
-- **24** plugins in one monorepo, from **~59,000** lines of agent-written source — **23** of them on the phone
-- **9** shared agent skills, one store, read live by every agent
-- **679** routing-contract checks across **31** channels, replayed before every release
+- **25** plugins in one monorepo, from **~90,000** lines of agent-written source — **24** of them on the phone
+- **12** shared agent skills, one store, read live by every agent
+- **1,581** routing-contract checks across **34** channels, replayed before every release
 - **2** public plugin releases and this showcase — the only public surfaces, by design, each behind a history-wide privacy gate
 
 **The life inside it**
-- **~19,000** files in the vault (about 9,000 of them Markdown notes) · **244** daily logs
-- **3,168** captured media items as native notes
-- **197** people records · **61** projects under management
+- **~26,000** files in the vault (about 9,500 of them Markdown notes) · **262** daily logs
+- **3,229** captured media items as native notes
+- **202** people records · **55** open projects under management
 
 **The runtime**
-- **35** scheduled jobs on the home server, each with a heartbeat — plus a second-machine watcher and an external dead-man's switch watching the watchers
+- **38** scheduled jobs on the home server, each with a heartbeat — plus a second-machine watcher and an external dead-man's switch watching the watchers
 - **2** machines · **N** interchangeable agents · **1** source of truth
-- One AI budget governor: **$10/month** with a hard stop — the entire assistant layer runs inside it, and un-costed calls are estimated so the cap can't be blinded
+- One AI budget governor: **$15/month** with a hard stop — the entire assistant layer runs inside it, un-costed calls are estimated so the cap can't be blinded, and a credit gauge names an empty balance before it becomes silence
 
 ---
 
-*Distilled from the system's own changelog and narrative timeline, updated September 2026.*
+*Distilled from the system's own changelog and narrative timeline, updated October 2026.*
