@@ -38,6 +38,10 @@ The oldest subsystem and the origin of the whole project. Share a link from any 
 
 ![Media Library](media/media-library.png)
 
+**Theater**, the lean-back player — every saved video, post, and clip in one stage, with stars, tags, and *up next* a tap away:
+
+![Media Log Theater](media/media-theater.png)
+
 > 🎬 coming: phone share → item appears in the library
 
 ## Select Media
@@ -114,9 +118,27 @@ Raw institution exports drop into a watched inbox folder; adapters normalize the
 
 *Everything is an asset.* Every house system, vehicle, appliance, and tool is a plain note with a stable grammar, and the property app is a dossier for each one. The first card on every page answers the question asked while standing in front of the thing — **what does it take?** — filter sizes, oil grade, fuel, battery, with tap-to-copy specs and a *confirm* flag where sources disagree (the page shows the conflict and what would settle it, rather than picking a winner). Official manufacturer manuals sit one tap away on their own card.
 
+![Select Property — What I have](media/property-have.png)
+
+Each thing's dossier leads with what it takes, then its manuals, its age against its typical life, and one timeline of service, issues, and papers:
+
+![Select Property — a dossier](media/property-dossier.png)
+
 Its September app review found it had heard nothing through its own doors in two months, so version 2.0 was rebuilt to **listen**: it notices upkeep in checked tasks, text messages, payments, and filed papers, and asks a single question in the morning brief before going quiet. Then it learned to **see**. A photo texted about an item lands on that item's page; a photo of a rating plate fills in make, model, and serial; a close-up of a filter edge or battery label confirms or corrects the consumable spec — all through one existing vision pass whose fixed output lines are parsed by code, never overwriting a value without a yes. Large purchases from the ledger with no record behind them prompt *start a record?*, and loans show what's still owed.
 
 The last page is **the land**: every map layer, historical aerials back to 1938, recorded walks, and survey lines in one coordinate frame, with tap-to-read elevation and soil; a walkable field guide for finding an old survey's corners; and a history tab that traces ownership back to the original federal land patent from recorded deeds — every source saved locally so a dead link can't erase it, every inference labeled as one.
+
+## Family history
+
+A family tree kept as one standard genealogy file, with a query tool for agents and an app for the tree, pedigree, migration map, and records on desktop and phone. Every change carries an audit trail and a source; disagreeing sources stay open as questions with each side's evidence; and "researched" is kept separate from "proven" — a link is drawn as proven only when an original record stating it has been read. Research agents search free public archives and digitized books directly, with real page citations and a refusal to look up living people.
+
+The whole tree reads across three and a half centuries at once — every direct ancestor on a timeline, colored by whether an original record backs them, with a doubted link drawn dashed until its open question is settled:
+
+![Family history — the whole tree](media/genealogy-tree.png)
+
+The map tells the same family as movement: who was born on one side of the ocean and died on the other, and every line's way west:
+
+![Family history — journeys](media/genealogy-places.png)
 
 ## Intentions
 
@@ -156,5 +178,4 @@ The tour above is the daily core, not the full roster. Sharing the same kit, sty
 - **The Mastermind** — the coaching portal grown into a commitment system: every coach a CRM dossier with sessions, prep, and open promises; commitments have owners (a coach's own promises don't count as the owner's kept word); and AI seats spawn read-only agents that investigate the whole vault from the server.
 - **Select Bible** — a Bible study subsystem: reading tracks, a free-reading interface with verse-tagged notes, and sermon capture — deliberately AI-free in version one, and the first app graded by the new single-app review format.
 - **Server Watch** — the home server takes hourly screenshots of its own console and runs changed frames through a perceptual-diff-then-vision check, because status files only report what code thought to measure.
-- **Family history** — a family tree kept as one standard genealogy file, with a query tool for agents and an app for the tree, pedigree, migration map, and records on desktop and phone. Every change carries an audit trail and a source; disagreeing sources stay open as questions with each side's evidence; and "researched" is kept separate from "proven" — a link is drawn as proven only when an original record stating it has been read. Research agents search free public archives and digitized books directly, with real page citations and a refusal to look up living people.
 - **The Style Guide** — Select's visual languages documented side by side with live specimens, so twenty-five plugins read as one product.

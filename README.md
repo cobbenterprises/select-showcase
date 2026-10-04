@@ -49,6 +49,12 @@ Every one of these is a live surface used daily, not a demo:
     <td width="25%"><a href="https://cobbenterprises.github.io/select-showcase/SUBSYSTEMS.html#also-in-the-family"><img src="media/marketing-results.png" alt="Select Marketing"/><br/><sub><b>Marketing</b></sub></a></td>
     <td width="25%"><a href="https://cobbenterprises.github.io/select-showcase/SUBSYSTEMS.html#select-menu"><img src="media/select-menu.png" alt="Select Menu"/><br/><sub><b>Select Menu</b></sub></a></td>
   </tr>
+  <tr>
+    <td width="25%"><a href="https://cobbenterprises.github.io/select-showcase/SUBSYSTEMS.html#select-property"><img src="media/property-have.png" alt="Select Property"/><br/><sub><b>Property</b></sub></a></td>
+    <td width="25%"><a href="https://cobbenterprises.github.io/select-showcase/SUBSYSTEMS.html#select-property"><img src="media/property-dossier.png" alt="A Property dossier"/><br/><sub><b>Property dossier</b></sub></a></td>
+    <td width="25%"><a href="https://cobbenterprises.github.io/select-showcase/SUBSYSTEMS.html#family-history"><img src="media/genealogy-tree.png" alt="Family history"/><br/><sub><b>Family history</b></sub></a></td>
+    <td width="25%"><a href="https://cobbenterprises.github.io/select-showcase/SUBSYSTEMS.html#family-history"><img src="media/genealogy-places.png" alt="Family journeys"/><br/><sub><b>Family journeys</b></sub></a></td>
+  </tr>
 </table>
 
 Every pixel above is real plugins over fictional data: screenshots come from a sanitized demonstration vault (a fictional family, fictional finances, fictional messages), never from the live system.
