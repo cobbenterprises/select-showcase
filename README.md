@@ -59,7 +59,7 @@ Every one of these is a live surface used daily, not a demo:
   </tr>
 </table>
 
-Every pixel above is real plugins over fictional data: screenshots come from a sanitized demonstration vault (a fictional family, fictional finances, fictional messages), never from the live system.
+Every pixel above is real plugins over fictional data: screenshots come from a sanitized demonstration vault (a fictional family, fictional finances, fictional messages), never from the live system. Most were taken before the rename and still say "Select".
 
 Full tour with screens: **[SUBSYSTEMS.md](SUBSYSTEMS.md)**
 
@@ -72,7 +72,7 @@ The novelty isn't any single feature. It's the working relationship:
 - **Agents are the engineering team.** Nearly every plugin, runner, and pipeline was designed, written, deployed, and verified by AI agents (multiple, interchangeable, across two machines) directed in plain conversation. The human's role is product owner: pick, reject, redirect.
 - **The process is itself a subsystem.** Recommendations from agents land on a kanban board the moment they're made. Nothing ships without a written card note and verification evidence. A one-record-per-event rule keeps a single source of truth for every change.
 - **The vault is the substrate.** Everything is plain Markdown files in folders. Every "app" is a view over files the owner could edit by hand. No databases to migrate away from, no lock-in — the system could be abandoned tomorrow and the notes would still be notes.
-- **The channels are mouths; the brain is shared.** Voice, chat, email, and capture all funnel through one routing layer — **Select Routing** — where a model parses intent but only deterministic doors can write, and a release gate replays 1,581 fixture checks across thirty-four channels in both of its synchronized implementations. The same sentence behaves identically everywhere, by construction.
+- **The channels are mouths; the brain is shared.** Voice, chat, email, and capture all funnel through one routing layer — **Phoebe Routing** — where a model parses intent but only deterministic doors can write, and a release gate replays 1,581 fixture checks across thirty-four channels in both of its synchronized implementations. The same sentence behaves identically everywhere, by construction.
 - **Autonomy is structural, not promised.** Agents draft, never send. Message bodies are data, never instructions. Outbound channels are allowlisted and double-gated. Every AI call is priced, attributed, and budget-capped.
 
 How the architecture works: **[HOW-IT-WORKS.md](HOW-IT-WORKS.md)**
@@ -84,7 +84,7 @@ How the partnership works — and how it stays agent-independent: **[ENGINEERING
 
 The system kept its own records as it was built — a changelog of every ship, and a narrative timeline distilled from it. The sanitized public cut is here:
 
-**[TIMELINE.md](TIMELINE.md)** — from a named vision (December 2025), through a capture pipeline and months of ecosystem research, to a five-day sprint in July 2026 in which the vault became an operating system — the week it had to prove it could be lived in, the fortnight it went public and hardened itself, the seventeen days when it went transaction-deep, learned to review itself with three different AI engines at once, and got a phone line of its own — and the five weeks after that, when every channel collapsed into one conversation spine, the tests learned to guard the real vault, and the system grew rooms for learning, watching, and outreach — and the ten days after that, when every room was graded by whether it was actually *used*, and the ones that failed were rebuilt the same day.
+**[TIMELINE.md](TIMELINE.md)** — from a named vision (December 2025), through a capture pipeline and months of ecosystem research, to a five-day sprint in July 2026 in which the vault became an operating system — the week it had to prove it could be lived in, the fortnight it went public and hardened itself, the seventeen days when it went transaction-deep, learned to review itself with three different AI engines at once, and got a phone line of its own — and the five weeks after that, when every channel collapsed into one conversation spine, the tests learned to guard the real vault, and the system grew rooms for learning, watching, and outreach — and the ten days after that, when every room was graded by whether it was actually *used*, and the ones that failed were rebuilt the same day — and, in November, the day she got her name.
 
 It includes the mistakes, kept on purpose.
 
@@ -92,4 +92,6 @@ And the scale is verifiable, not vibes: **1,146** changelog entries, **696** dev
 
 ---
 
-*Select is a personal system and is not distributed. Questions and conversation are welcome via issues.*
+*Phoebe is a personal system and is not distributed. Questions and conversation are welcome via issues.*
+
+*The name comes from Romans 16, where Paul calls Phoebe "a helper of many" and trusts her to carry his letter. For the curious, it also stands for **P**ersonal **H**ub **O**f **E**verything, **B**acked by **E**vidence.*

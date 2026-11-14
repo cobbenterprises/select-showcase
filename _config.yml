@@ -1,5 +1,5 @@
 theme: jekyll-theme-cayman
-title: Select
+title: Phoebe
 description: A personal operating system, built inside an Obsidian vault, operated by AI agents
 plugins:
   - jekyll-relative-links

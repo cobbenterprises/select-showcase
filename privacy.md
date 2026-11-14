@@ -1,8 +1,8 @@
 # Select Marketing — Privacy Policy
 
-*Last updated September 26, 2026*
+*Last updated November 14, 2026*
 
-Select Marketing is a private publishing tool inside Select, the personal operating system described on this site. It has one user: its owner. It publishes the owner's own posts to the owner's own LinkedIn profile and Facebook Page, then reads how those posts performed.
+Select Marketing is a private publishing tool inside Phoebe (called Select until November 2026), the personal operating system described on this site. Inside Phoebe it is shown as Phoebe Marketing; the app is still registered as "Select Marketing", and nothing about what it does has changed. It has one user: its owner. It publishes the owner's own posts to the owner's own LinkedIn profile and Facebook Page, then reads how those posts performed.
 
 ## What it accesses
 

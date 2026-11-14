@@ -1,4 +1,4 @@
-# How Select Works
+# How Phoebe Works
 
 No code in this repo — this is the architecture in prose, at the level of detail that transfers.
 
@@ -11,7 +11,7 @@ flowchart TB
     end
 
     subgraph surfaces["Interface — 25 custom Obsidian plugins (one monorepo, shared kit)"]
-        home["Select Home"] --- tasks["Tasks + Board"] --- media["Media Library"] --- fin["Finances"] --- more["…"]
+        home["Phoebe Home"] --- tasks["Tasks + Board"] --- media["Media Library"] --- fin["Finances"] --- more["…"]
     end
 
     subgraph server["Runtime — an always-on home server (a Mac mini)"]
@@ -36,7 +36,7 @@ Four layers, one rule: **everything bottoms out in plain Markdown files.** Every
 
 ## The subsystem pattern
 
-Select's unit of construction is the **subsystem**:
+Phoebe's unit of construction is the **subsystem**:
 
 > **plugin surface + vault-backed records + agent write path**
 
@@ -44,7 +44,7 @@ A subsystem is a UI the human uses, files that hold its state (readable and edit
 
 ## One routing brain, channel-agnostic by construction
 
-Every way of talking to the system — Siri dictation, iMessage (one-to-one or in a group thread), a quick-capture line on the phone, an emailed instruction, a sentence in a recorded thinking session — funnels into a single parse-and-route layer, **Select Routing**, before anything is written anywhere. The channels are mouths; the brain is shared. That's a construction decision, not a convention:
+Every way of talking to the system — Siri dictation, iMessage (one-to-one or in a group thread), a quick-capture line on the phone, an emailed instruction, a sentence in a recorded thinking session — funnels into a single parse-and-route layer, **Phoebe Routing**, before anything is written anywhere. The channels are mouths; the brain is shared. That's a construction decision, not a convention:
 
 - **One route core, not N parsers.** Chat transports call the same routing function; a new channel must plug into it, never fork it. The alternative — per-channel routing that drifts one bugfix at a time — is the failure mode the rule exists to kill.
 - **Deterministic executors under a model parser.** Word-matching handles the obvious cases for free; a schema-bound intent pass interprets the rest, but can only *name* a door from a closed set and fill its slots. Writes happen exclusively through the doors' own primitives; person resolution and the first-name trust gate never involve a model; non-commands default to conversation.
@@ -56,7 +56,7 @@ The payoff is the product bar this system is now measured against: for routine c
 
 ## Agents as the engineering team
 
-The distinctive part of Select isn't the plugins — it's who built them and how.
+The distinctive part of Phoebe isn't the plugins — it's who built them and how.
 
 - **Agent-agnostic by construction.** A single instruction file is the source of truth for every agent; skills live in one shared store read live through symlinks. Any agent (or two at once, on two machines) behaves identically. When the vault was found drifting toward one agent's tooling, that became the invariant: *no per-engine forks*.
 - **One record per event.** Every system change runs through a concurrency-safe workflow: backup first, per-session changelog fragment, merged under a lock. Ships go in the changelog; planning goes on the Dev Dashboard; the daily log belongs to the human. A fact stored twice is drift waiting to happen.
@@ -74,7 +74,7 @@ Trust is designed in, not promised:
 - **Drafts, never sends.** The agent task lane produces reviewable draft notes; outbound email and messages happen only on explicit request, through allowlisted, double-gated, audited channels.
 - **Message bodies are data, never instructions.** Inbound mail is triaged from an allowlist of known senders; content is filed, not executed.
 - **Authority is tiered by sender.** The owner has full reach; a household tier gets shared-life records and conversation with its own isolated memory, but never code, configuration, credentials, payments, irreversible confirmations, or the owner's private thread. Group threads are refused if any member is off the allowlist, and private memory stays out of shared threads. The boundary is pinned in the routing contract, and a read-only audit panel shows each sender's tier — never message contents.
-- **One prompt a day.** The morning brief, delivered by iMessage, is the only message Select starts on its own — and it can be answered in plain words. Everything else is a reply, or a question about work the owner handed it.
+- **One prompt a day.** The morning brief, delivered by iMessage, is the only message Phoebe starts on her own — and it can be answered in plain words. Everything else is a reply, or a question about work the owner handed it.
 - **Done means done.** Nothing is reported as done until it is: a message counts as delivered when the bridge confirms it, an email handed off stays visible until its destination proves it was filed, and identity and account numbers are masked in every piece of extracted document text.
 - **Money records move in reversible batches.** Any change to an external accounting system needs a verified backup first, a per-entry audit event in a hash-chained log, and undo by batch or by entry. Corrections an investigation finds stay unposted proposals until one whole-picture review covers them all — no piecemeal posting, no plug figures.
 - **Split autonomy.** Voice-captured items file freely into daily logs; anything touching project files requires approval — with a full action ledger either way.
@@ -83,7 +83,7 @@ Trust is designed in, not promised:
 
 ## The server
 
-An always-on machine at home runs the whole background layer as native scheduled jobs: media capture, mail triage, Select's own iMessage line (with a daily self-ping that proves delivery, because a send counter is not a delivered message), the morning brief, the missed-message radar, the agent work lane, the nightly off-site vault mirror (moved there after it failed only on nights the laptop was closed), leased verification lanes for agents, a network watch that texts once when a mesh node drops and once when it returns — plus an hourly vision check on its own console screen, because status files only report what code thought to measure. Configured for unattended recovery: auto-restart after power loss, auto-login, remote access over a private mesh VPN with key-only, command-restricted SSH for the voice channel.
+An always-on machine at home runs the whole background layer as native scheduled jobs: media capture, mail triage, Phoebe's own iMessage line (with a daily self-ping that proves delivery, because a send counter is not a delivered message), the morning brief, the missed-message radar, the agent work lane, the nightly off-site vault mirror (moved there after it failed only on nights the laptop was closed), leased verification lanes for agents, a network watch that texts once when a mesh node drops and once when it returns — plus an hourly vision check on its own console screen, because status files only report what code thought to measure. Configured for unattended recovery: auto-restart after power loss, auto-login, remote access over a private mesh VPN with key-only, command-restricted SSH for the voice channel.
 
 ## Mobile, by decision — not by default
 
@@ -91,13 +91,13 @@ Nearly the whole fleet (24 of 25 plugins) now runs on the phone, and that ratio 
 
 - **Capture must work from the phone, always.** Every door into the vault is phone-first: the share sheet into the media library, dictation straight into the daily log (including a fully offline path), the Siri voice channel, mobile task capture. A capture system that needs a desk is a capture system that misses everything.
 - **Review works from the couch.** Task triage, the review decks, the journal, the people and travel cockpits, the dev board's sign-off room — all verified on a phone viewport before any ship, via a mobile-emulation harness (with real-device cold starts as final sign-off). Working a queue is a sofa activity.
-- **Deep work stays at the desk — on purpose.** Surfaces that go mobile do so as a decision, and what stays behind stays behind deliberately: the desk-microphone voice-processing surface remains desktop-only (the phone's door into it is simply texting Select a voice memo), and mobile versions of dense screens ship as their own designs (the phone gets the document *library*, not the intake workbench). A cramped phone rendering of a dense screen serves nobody.
+- **Deep work stays at the desk — on purpose.** Surfaces that go mobile do so as a decision, and what stays behind stays behind deliberately: the desk-microphone voice-processing surface remains desktop-only (the phone's door into it is simply texting Phoebe a voice memo), and mobile versions of dense screens ship as their own designs (the phone gets the document *library*, not the intake workbench). A cramped phone rendering of a dense screen serves nobody.
 - **The phone budget is real.** Mobile Obsidian lives under an OS memory ceiling — a single greedy full-text-index plugin once put the app into a silent reload loop until forensics traced it. Since then, every plugin earns its place on the phone; anything that can't justify its mobile memory footprint gets the desktop-only flag. In October the budget became a written rule: every plugin change is built with the phone in mind, a crash watch records what was on screen when the operating system killed the app, and a shared picture kit draws every image at the size its spot needs — guarded at build time and audited at phone size, because an earlier audit had made pictures load *later* without ever making them *smaller*.
 
 So "is it mobile-optimized?" gets answered per-surface at design time, recorded in the plugin manifest, and enforced by the pre-ship verification pass — the standing product lens is called **mobile parity**, and skipping it takes a written justification.
 
 ## Why Obsidian / plain files
 
-- **Longevity.** The notes predate Select by years and will outlive any plugin.
+- **Longevity.** The notes predate Phoebe by years and will outlive any plugin.
 - **Leverage.** Agents are excellent at reading and writing Markdown; the vault is simultaneously the database, the API, and the audit log.
 - **Exit.** Abandon every plugin tomorrow and nothing is lost — the system degrades gracefully back into a folder of readable files.

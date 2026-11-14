@@ -1,9 +1,9 @@
-# The Select Timeline
+# The Phoebe Timeline
 
-Select keeps its own history: every ship goes into a changelog, and the changelog is periodically distilled into a narrative timeline. This is the public cut of that document — same events, same dates, with personal details removed.
+Phoebe keeps her own history: every ship goes into a changelog, and the changelog is periodically distilled into a narrative timeline. This is the public cut of that document — same events, same dates, with personal details removed. Until November 14, 2026 she was called Select, so the entries before that date use the old name.
 
-**Span:** December 27, 2025 → October 3, 2026.
-**Shape:** a vision, six months of quiet groundwork, three weeks in which nearly everything below was built, a fortnight of facing outward and hardening — then seventeen days of depth: truth-telling reviews, transaction-deep finances, and a conversation spine with its own phone line — five weeks of making that spine the only one, making the tests honest, and opening new rooms on top of it — and ten days of grading every room by whether it was actually used, then rebuilding what failed the test.
+**Span:** December 27, 2025 → November 14, 2026.
+**Shape:** a vision, six months of quiet groundwork, three weeks in which nearly everything below was built, a fortnight of facing outward and hardening — then seventeen days of depth: truth-telling reviews, transaction-deep finances, and a conversation spine with its own phone line — five weeks of making that spine the only one, making the tests honest, and opening new rooms on top of it — and ten days of grading every room by whether it was actually used, then rebuilding what failed the test — and, in November, a new name.
 
 ---
 
@@ -132,6 +132,12 @@ A new single-app review format stopped asking whether a surface worked and start
 - **Oct 3** — **The day it names.** "Did X on Thursday" now lands in Thursday's log from every channel, while "dentist Thursday" stays in today's. Emails handed to the assistant stay visible until they are really filed — an already-filed one closes only with quoted proof from its destination — and identity and account numbers are masked in every piece of extracted document text.
 
 > *Lesson kept: delivered every morning and answered never is not working — measure whether a thing is used, not whether it ran.*
+
+## Phase 10 — A name of her own (November 2026)
+
+- **Nov 14** — **Select becomes Phoebe.** People kept hearing "Select" as a verb or a premium tier rather than a name; "ask Select" read like half a sentence. The assistant is now **Phoebe**, after the Phoebe of Romans 16, whom Paul calls "a helper of many" and trusts to carry his letter. A planned two-week trial was dropped the same morning, and the rename shipped in one day in four passes: her voice in every prompt and sign-off, a second address on her own message line, every app's display name ("Phoebe Home", "Phoebe Routing", "Ask Phoebe") across twenty-seven plugins released in one train with about 600 visible strings reviewed by hand, then the docs. Nothing underneath was renamed: plugin ids, links, repositories, and paths keep `select`, because renaming plumbing breaks links and buys nothing anyone sees. And no find-and-replace was allowed, because "Select" is also a button verb and a database keyword. Old records still say Select; they mean her.
+
+> *Lesson kept: a name is a surface, not an identifier — change what people see, and leave alone what links depend on.*
 
 ---
 

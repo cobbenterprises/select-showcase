@@ -1,6 +1,6 @@
 # The Engineering
 
-How Select actually gets built: a working partnership between one human and a set of interchangeable AI agents, with the vault itself as the whole engineering environment.
+How Phoebe actually gets built: a working partnership between one human and a set of interchangeable AI agents, with the vault itself as the whole engineering environment.
 
 ## The partnership
 
@@ -26,11 +26,11 @@ The instruction file is, in effect, the team's case law — and both sides can c
 
 ## Agent-independent by construction
 
-Select is deliberately not built *on* any one AI product. It's built so that **any capable agent can sit down and be Select**:
+Phoebe is deliberately not built *on* any one AI product. She's built so that **any capable agent can sit down and be Phoebe**:
 
 - **One instruction file is the single source of truth.** Engine-specific config files are one-line pointers to it. No behavior forks per engine, ever.
 - **Skills live in exactly one shared store**, read live by every agent through symlinks. There is no copy to sync, so there is no drift — the failure mode that created this rule (one agent quietly running with a stale subset of another's skills) can't recur.
-- **The persona is neutral.** Docs, skills, and shared records refer to the assistant as *Select*, never by engine name. Swapping the underlying model is a configuration change, not a migration.
+- **The persona is neutral.** Docs, skills, and shared records refer to the assistant as *Phoebe*, never by engine name. Swapping the underlying model is a configuration change, not a migration. Renaming her in November 2026 worked the same way: the persona changed in the shared files and the apps' display names, while every identifier, link, and repository kept its old `select` name.
 - **Two agents run concurrently across two machines** — a workstation and the home server — against the same vault. The change workflow is built for that: every system change gets its own backup session and its own changelog fragment, merged under a lock, so simultaneous work never collides or cross-contaminates.
 
 ```mermaid

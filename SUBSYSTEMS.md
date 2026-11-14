@@ -1,36 +1,36 @@
 # Subsystem Tour
 
-One section per subsystem. Every screenshot below is captured from a sanitized demonstration vault — a fictional family, fictional finances, fictional messages — running the real plugins. GIFs are still being recorded; remaining placeholders are marked.
+One section per subsystem. Every screenshot below is captured from a sanitized demonstration vault — a fictional family, fictional finances, fictional messages — running the real plugins. Most were taken before November 2026, when the apps still said "Select" instead of "Phoebe". GIFs are still being recorded; remaining placeholders are marked.
 
 ---
 
-## Select Home
+## Phoebe Home
 
 The front door. A native homepage plugin with an app dock, a single-line quick capture, and a Daily Verse card drawn from a 247-verse curated rotation — with a one-tap **Reflect** action that journals the verse and your thought straight into the day's log. Mobile layout is first-class; a bento variant exists behind a setting.
 
 Since late September, Home's default layout is **Morning Home**: the day's brief leads the screen all day, with one-tap verbs (*Did it*, *Not yet*, *Reply*) that write real records with an undo that refuses rather than damage anything written since. It was rebuilt in one day after a review found the brief had been delivered 83 of 83 mornings and acted on almost never — so instead of a Close button nobody pressed, the day now sets itself, and the brief asks one question instead of a list. A *What did you do yesterday?* box backfills the day before, and any sentence naming a past day ("did the survey walk on Thursday") lands in that day's log from every channel.
 
-![Select Home](media/home-desktop.png)
+![Phoebe Home](media/home-desktop.png)
 
 The capture line goes straight into the day's journal:
 
 ![Capture to journal](media/capture-journal.gif)
 
-## Select Menu
+## Phoebe Menu
 
 The launchpad — a plain Markdown note that behaves like an app screen. A dock of the daily surfaces up top, then a launcher card for every subsystem that doesn't earn a dock slot, each with its state and a one-line pitch. Because it's just a note, agents update it the way they update anything else: by editing text.
 
-![Select Menu](media/select-menu.png)
+![Phoebe Menu](media/select-menu.png)
 
-## Select Tasks + Board
+## Phoebe Tasks + Board
 
-A task application over ordinary Markdown checkboxes — no new task model, ever. Rows edit natively, subtasks nest, projects and people cross-link. The Board view adds a drag-and-drop kanban that is **pull-only** by design (the failure mode of every kanban is becoming the inventory). Its **Select lane** is the headline: drop a card there and an agent sweeps it within five minutes, drafts the work, and parks the card in Waiting with a link to a reviewable result note — including a "Needs from you" section for what it couldn't do.
+A task application over ordinary Markdown checkboxes — no new task model, ever. Rows edit natively, subtasks nest, projects and people cross-link. The Board view adds a drag-and-drop kanban that is **pull-only** by design (the failure mode of every kanban is becoming the inventory). Its **Phoebe Lane** is the headline: drop a card there and an agent sweeps it within five minutes, drafts the work, and parks the card in Waiting with a link to a reviewable result note — including a "Needs from you" section for what it couldn't do.
 
-![Select Tasks](media/tasks.png)
+![Phoebe Tasks](media/tasks.png)
 
-The Select lane, end to end — a card enters the lane, Select drafts the work, the card parks in Waiting with the draft linked, and the draft ends with what it needs from you:
+The Phoebe Lane, end to end — a card enters the lane, Phoebe drafts the work, the card parks in Waiting with the draft linked, and the draft ends with what it needs from you:
 
-![Select lane](media/select-lane.gif)
+![Phoebe Lane](media/select-lane.gif)
 
 ## Media Log
 
@@ -44,29 +44,29 @@ The oldest subsystem and the origin of the whole project. Share a link from any 
 
 > 🎬 coming: phone share → item appears in the library
 
-## Select Media
+## Phoebe Media
 
-The Media Log keeps what was *captured*; **Select Media** keeps what's *wanted*. A poster-gallery watchlist, a watched log grouped by month, a music shelf where each cover opens straight in the music service, and on/off tiles for the streaming subscriptions the household actually pays for. Posters and where-to-stream data come from a free, keyless lookup — no AI cost. The headline is **Tonight**: up to three titles you can play right now on services you already have, with a *deal again* button — and the same question texted ("what should we watch tonight?") gets the same answer. Things to watch are plain bullets in a note, never tasks, from every channel.
+The Media Log keeps what was *captured*; **Phoebe Media** keeps what's *wanted*. A poster-gallery watchlist, a watched log grouped by month, a music shelf where each cover opens straight in the music service, and on/off tiles for the streaming subscriptions the household actually pays for. Posters and where-to-stream data come from a free, keyless lookup — no AI cost. The headline is **Tonight**: up to three titles you can play right now on services you already have, with a *deal again* button — and the same question texted ("what should we watch tonight?") gets the same answer. Things to watch are plain bullets in a note, never tasks, from every channel.
 
-![Select Media](media/select-media.png)
+![Phoebe Media](media/select-media.png)
 
-## Select Learn
+## Phoebe Learn
 
 Every subject the owner is studying becomes a **class**: one readable note holding a syllabus, a notebook, a study timeline, and every Media Log capture tagged to it. An *In process* strip shows what's being read or watched right now, straight from the note itself. Every add is undoable, there are no AI calls in the surface, and it works on the phone. The channels share one decision about what an input does to a class — "started reading X" or "finished X" texted, spoken, typed into Home, or entered on the page lands the same line in the same format, and a contract check fails the release if any channel bypasses the class writer. Questions asked about a course by text or voice are saved with their full answers. It went from first version to eleventh in two days, each version from a real use.
 
 **Field guides** are its reference shelf: any note marked as a field guide — a who's-who, a chronology of turning points, an illustrated collector's checklist — appears on the learning home page and on the right class pages by itself, so nothing depends on someone remembering to hand-link it. A *Considering* shelf holds courses the owner might take, and syllabus *Options* turn candidate books into cards that become the next unit in one tap.
 
-![Select Learn](media/select-learn.png)
+![Phoebe Learn](media/select-learn.png)
 
 ## Comms
 
-Select has its own email address — and, since August, its own native iMessage line, running under a second account on the server so it texts from a real identity. That line is now the single chat spine — a persistent loop picks up an incoming text in two or three seconds, a message counts as delivered only when the bridge confirms it arrived, and the always-on service checks that new code compiles before it hot-reloads onto it: the earlier Telegram channel was retired by switching it off in the channel registry (restorable in two steps, not deleted), and the iMessage line earned its place with tested failure drills, a daily self-ping that proves a message actually arrives, and a sweep that recovers texts that died while the line was down. Inbound mail hits a gateway on the server: allowlisted senders → AI triage → routed to schedule ingestion, self-filing to known destinations, note capture, or ignore — every decision audited, and message bodies treated as data, never instructions. The iMessage line understands group threads — replying in the thread a message came from, refusing any thread with a member off the allowlist, and keeping private memory out of shared ones — and a second, bounded access tier lets household members use it for shared-life records without ever reaching code, configuration, money, or the owner's private thread. The morning task email is two-way too: a *Done* or *Not mine* per task, parsed deterministically with no AI call. On chat, **conversation is the default door**: anything not command-shaped gets a grounded, free-form reply (with photos read into words at the transport edge, and voice memos transcribed locally), while an Outbound audit shows every message Select sends — including the refused ones. **Missed Messages** watches iMessage for owed replies, resolves phone numbers to real names, and offers inline reply drafts delivered by an isolated, allowlisted sender. A channel registry governs every channel's enabled/reply flags in one place.
+Phoebe has her own email address — and, since August, her own native iMessage line, running under a second account on the server so she texts from a real identity. That line is now the single chat spine — a persistent loop picks up an incoming text in two or three seconds, a message counts as delivered only when the bridge confirms it arrived, and the always-on service checks that new code compiles before it hot-reloads onto it: the earlier Telegram channel was retired by switching it off in the channel registry (restorable in two steps, not deleted), and the iMessage line earned its place with tested failure drills, a daily self-ping that proves a message actually arrives, and a sweep that recovers texts that died while the line was down. Inbound mail hits a gateway on the server: allowlisted senders → AI triage → routed to schedule ingestion, self-filing to known destinations, note capture, or ignore — every decision audited, and message bodies treated as data, never instructions. The iMessage line understands group threads — replying in the thread a message came from, refusing any thread with a member off the allowlist, and keeping private memory out of shared ones — and a second, bounded access tier lets household members use it for shared-life records without ever reaching code, configuration, money, or the owner's private thread. The morning task email is two-way too: a *Done* or *Not mine* per task, parsed deterministically with no AI call. On chat, **conversation is the default door**: anything not command-shaped gets a grounded, free-form reply (with photos read into words at the transport edge, and voice memos transcribed locally), while an Outbound audit shows every message Phoebe sends — including the refused ones. **Missed Messages** watches iMessage for owed replies, resolves phone numbers to real names, and offers inline reply drafts delivered by an isolated, allowlisted sender. A channel registry governs every channel's enabled/reply flags in one place.
 
 ![Comms](media/comms-system.png)
 
-## Select Routing
+## Phoebe Routing
 
-The layer that makes every channel one channel. Whether a message arrives as a Siri dictation, an iMessage (alone or in a group thread), a quick-capture line typed on the phone, an emailed instruction, or a sentence inside a recorded thinking session, it funnels into the same parse-and-route core — **Select Routing** — and behaves identically. A voice memo is a text that started as breath; the owner should never have to remember which surface understands which phrasing.
+The layer that makes every channel one channel. Whether a message arrives as a Siri dictation, an iMessage (alone or in a group thread), a quick-capture line typed on the phone, an emailed instruction, or a sentence inside a recorded thinking session, it funnels into the same parse-and-route core — **Phoebe Routing** — and behaves identically. A voice memo is a text that started as breath; the owner should never have to remember which surface understands which phrasing.
 
 ```mermaid
 flowchart LR
@@ -75,7 +75,7 @@ flowchart LR
     cap["⌨️ Quick capture<br/>desktop · phone"] --> core
     mail["✉️ Email<br/>instructions"] --> core
     think["🧠 Thinking Time<br/>transcripts"] --> core
-    core["Select Routing<br/>words fast path → schema-bound intent parse"]
+    core["Phoebe Routing<br/>words fast path → schema-bound intent parse"]
     core --> doors["Deterministic doors<br/>task · agenda · calendar · person · property ·<br/>finance · dev card · commitment · class · media · name"]
     core --> convo["Conversation<br/>the default door"]
 ```
@@ -96,7 +96,7 @@ The spend and steering console for every AI call in the ecosystem. One shared co
 
 ## Calendar + People
 
-A read-only calendar layer ingests the family's calendars into a Today/Upcoming view and a week grid with a now-line — click any event to spawn its note — and since late August, events carry a meeting layer: attendees matched to person records, a capture door for meeting notes, and action items flowing into Tasks. **Select People** is a CRM that demands zero data entry: mention someone anywhere in the vault and their dossier accrues — I-owe / waiting-on / agenda, a deep-linked mention timeline, calendar-fed contact history, and a Text action wired to Missed Messages.
+A read-only calendar layer ingests the family's calendars into a Today/Upcoming view and a week grid with a now-line — click any event to spawn its note — and since late August, events carry a meeting layer: attendees matched to person records, a capture door for meeting notes, and action items flowing into Tasks. **Phoebe People** is a CRM that demands zero data entry: mention someone anywhere in the vault and their dossier accrues — I-owe / waiting-on / agenda, a deep-linked mention timeline, calendar-fed contact history, and a Text action wired to Missed Messages.
 
 ![People](media/people-dossier.png)
 
@@ -104,7 +104,7 @@ A read-only calendar layer ingests the family's calendars into a Today/Upcoming 
 
 ## Voice
 
-Three escalating layers: the morning **Daily Brief** arrives as spoken audio (with a truncation guard that refuses to ship implausibly short files); **Ask Select** turns phone dictation into filed vault notes over a key-only, command-restricted tunnel — "Hey Siri" to librarian in one LTE round trip; **Thinking Time** records longer sessions, transcribes, auto-files daily items, and gates any project edit behind approval with a full action ledger.
+Three escalating layers: the morning **Daily Brief** arrives as spoken audio (with a truncation guard that refuses to ship implausibly short files); **Ask Phoebe** turns phone dictation into filed vault notes over a key-only, command-restricted tunnel — "Hey Siri" to librarian in one LTE round trip; **Thinking Time** records longer sessions, transcribes, auto-files daily items, and gates any project edit behind approval with a full action ledger.
 
 > 🎬 coming: Siri shortcut → note lands in the vault
 
@@ -114,15 +114,15 @@ Raw institution exports drop into a watched inbox folder; adapters normalize the
 
 ![Finances](media/finances-overview.png)
 
-## Select Property
+## Phoebe Property
 
 *Everything is an asset.* Every house system, vehicle, appliance, and tool is a plain note with a stable grammar, and the property app is a dossier for each one. The first card on every page answers the question asked while standing in front of the thing — **what does it take?** — filter sizes, oil grade, fuel, battery, with tap-to-copy specs and a *confirm* flag where sources disagree (the page shows the conflict and what would settle it, rather than picking a winner). Official manufacturer manuals sit one tap away on their own card.
 
-![Select Property — What I have](media/property-have.png)
+![Phoebe Property — What I have](media/property-have.png)
 
 Each thing's dossier leads with what it takes, then its manuals, its age against its typical life, and one timeline of service, issues, and papers:
 
-![Select Property — a dossier](media/property-dossier.png)
+![Phoebe Property — a dossier](media/property-dossier.png)
 
 Its September app review found it had heard nothing through its own doors in two months, so version 2.0 was rebuilt to **listen**: it notices upkeep in checked tasks, text messages, payments, and filed papers, and asks a single question in the morning brief before going quiet. Then it learned to **see**. A photo texted about an item lands on that item's page; a photo of a rating plate fills in make, model, and serial; a close-up of a filter edge or battery label confirms or corrects the consumable spec — all through one existing vision pass whose fixed output lines are parsed by code, never overwriting a value without a yes. Large purchases from the ledger with no record behind them prompt *start a record?*, and loans show what's still owed.
 
@@ -168,14 +168,14 @@ The tour above is the daily core, not the full roster. Sharing the same kit, sty
 
 - **The project cockpit** (shown above) — a heartbeat pulse per project, an importance × momentum map, and a triage deck where every stalled project leaves with a decision; now one mode of the Intentions room, its third home found after shipping standalone.
 - **Podcast Runner** — submit an episode URL, get a staged, highlighted summary note with per-run cost accounting — opening with a Listen Decision brief: listen in full, listen to these timestamped stretches, or skip, and what you're not missing.
-- **Select Docs** — OCR-first document intake: receipts, invoices, and scanner output, staged, routed, and searchable — with quote deadlines extracted into a standing expired-decisions queue.
-- **Select Marketing** — a hub for a professional practice's social presence, organized around one question: *does posting start conversations?* This week, pipeline, assets (with a tag library any agent can read), brand, outputs, results. Finished designs publish to the owner's professional and social pages through official APIs, one per chosen posting time, and the results are read back onto each post. The Results screen answers the question directly — every post on both platforms, never summing measures that don't mean the same thing, with conversations started as the column that matters:
+- **Phoebe Docs** — OCR-first document intake: receipts, invoices, and scanner output, staged, routed, and searchable — with quote deadlines extracted into a standing expired-decisions queue.
+- **Phoebe Marketing** — a hub for a professional practice's social presence, organized around one question: *does posting start conversations?* This week, pipeline, assets (with a tag library any agent can read), brand, outputs, results. Finished designs publish to the owner's professional and social pages through official APIs, one per chosen posting time, and the results are read back onto each post. The Results screen answers the question directly — every post on both platforms, never summing measures that don't mean the same thing, with conversations started as the column that matters:
 
-  ![Select Marketing results](media/marketing-results.png)
+  ![Phoebe Marketing results](media/marketing-results.png)
 
 - **The rental-business surface** — a small rental business shown in six rooms (health, performance, rent roll, cash and debt, decisions, records), computed read-only from retained accounting exports so every number drills through to ledger lines. Its only write is the expected rent. The records work behind it ran across many sessions and two AI engines through a shared handoff file — checksummed evidence, independent verifier scripts, every external write backed up and undoable.
-- **The Select Lexicon** — the language built with the agents (modes of thinking, shorthand, component words, retired words), first mined from 130+ agent transcripts; a naming door adds a row whenever something gets named in any channel. With the Style Guide (the look) and the UX patterns (the behavior), it's the third reference: the words.
+- **The Phoebe Lexicon** — the language built with the agents (modes of thinking, shorthand, component words, retired words), first mined from 130+ agent transcripts; a naming door adds a row whenever something gets named in any channel. With the Style Guide (the look) and the UX patterns (the behavior), it's the third reference: the words.
 - **The Mastermind** — the coaching portal grown into a commitment system: every coach a CRM dossier with sessions, prep, and open promises; commitments have owners (a coach's own promises don't count as the owner's kept word); and AI seats spawn read-only agents that investigate the whole vault from the server.
-- **Select Bible** — a Bible study subsystem: reading tracks, a free-reading interface with verse-tagged notes, and sermon capture — deliberately AI-free in version one, and the first app graded by the new single-app review format.
+- **Phoebe Bible** — a Bible study subsystem: reading tracks, a free-reading interface with verse-tagged notes, and sermon capture — deliberately AI-free in version one, and the first app graded by the new single-app review format.
 - **Server Watch** — the home server takes hourly screenshots of its own console and runs changed frames through a perceptual-diff-then-vision check, because status files only report what code thought to measure.
-- **The Style Guide** — Select's visual languages documented side by side with live specimens, so twenty-five plugins read as one product.
+- **The Style Guide** — Phoebe's visual languages documented side by side with live specimens, so twenty-five plugins read as one product.
