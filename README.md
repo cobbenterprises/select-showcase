@@ -1,8 +1,10 @@
-# Select
+# Phoebe
+
+*Called Select until November 2026.*
 
 **A personal operating system, built inside an Obsidian vault, operated by AI agents.**
 
-Select is not a product. It's one person's working life — tasks, calendar, people, media, finances, goals, communications — run through a single Markdown vault of some 26,000 files, with twenty-five custom plugins as the interface and AI agents as the engineering team, the operations staff, and the librarian.
+Phoebe is not a product. It's one person's working life — tasks, calendar, people, media, finances, goals, communications — run through a single Markdown vault of some 26,000 files, with twenty-five custom plugins as the interface and AI agents as the engineering team, the operations staff, and the librarian.
 
 This repo contains no code. It's a demonstration: screenshots, recordings, architecture notes, and the real, dated history of how the system was built. The short version of that history is the reason this repo exists — **the application layer, the server runtime, the agent workflow, and most of the subsystems below were built in about three weeks of evenings**, through conversation.
 
@@ -14,26 +16,26 @@ Every one of these is a live surface used daily, not a demo:
 
 | Subsystem | What it does |
 |---|---|
-| **Select Home** | Native homepage led all day by **Morning Home** — the morning brief with one-tap verbs that write real records — plus the app dock, a capture line that understands "did X on Thursday", and a daily verse |
-| **Select Tasks + Board** | Task app over plain Markdown checkboxes; a kanban with a **Select lane** — drag a card there and an agent drafts the work within five minutes |
+| **Phoebe Home** | Native homepage led all day by **Morning Home** — the morning brief with one-tap verbs that write real records — plus the app dock, a capture line that understands "did X on Thursday", and a daily verse |
+| **Phoebe Tasks + Board** | Task app over plain Markdown checkboxes; a kanban with a **Phoebe Lane** — drag a card there and an agent drafts the work within five minutes |
 | **Media Log** | Always-on capture pipeline: share a link from a phone or a browser tab, a server ingests it into a 3,200+ item library rebuilt to be *watched* — a lean-back Theater, a phone swipe feed, random Mixes — with full-text post capture and AI tag suggestions from a closed vocabulary |
-| **Select Media** | What to watch and hear: a poster-gallery watchlist, a watched log, streaming subscriptions, and a **Tonight** deal of three titles you can actually play right now |
-| **Select Learn** | Every subject being studied becomes a class — one readable note holding syllabus, notebook, timeline, and the media captured for it, fed from every channel — with **Field guides** (reference works that shelve themselves) and a one-tap *Teach me* on any saved video |
-| **Comms** | Select has its own email address and its own iMessage line — one chat spine that picks up a text in two or three seconds and counts a message delivered only when the bridge confirms it, with a daily delivery self-test, group threads, a bounded access tier for household members, a triaged mail gateway, and free-form conversation as the default door |
-| **Select Routing** | One channel-agnostic parse-and-route brain behind every channel: the same words do the same thing texted, spoken, typed, or emailed — deterministic doors, a schema-bound intent parser, receipts that only confirm writes that happened, and mis-routes pinned as regression fixtures |
+| **Phoebe Media** | What to watch and hear: a poster-gallery watchlist, a watched log, streaming subscriptions, and a **Tonight** deal of three titles you can actually play right now |
+| **Phoebe Learn** | Every subject being studied becomes a class — one readable note holding syllabus, notebook, timeline, and the media captured for it, fed from every channel — with **Field guides** (reference works that shelve themselves) and a one-tap *Teach me* on any saved video |
+| **Comms** | Phoebe has her own email address and her own iMessage line — one chat spine that picks up a text in two or three seconds and counts a message delivered only when the bridge confirms it, with a daily delivery self-test, group threads, a bounded access tier for household members, a triaged mail gateway, and free-form conversation as the default door |
+| **Phoebe Routing** | One channel-agnostic parse-and-route brain behind every channel: the same words do the same thing texted, spoken, typed, or emailed — deterministic doors, a schema-bound intent parser, receipts that only confirm writes that happened, and mis-routes pinned as regression fixtures |
 | **AI Router** | Every AI call in the ecosystem priced, attributed, and budget-capped — model steering per surface, spend at a glance, a governor with a hard stop |
 | **Calendar + People** | Read-only family calendar layer; a CRM that harvests @mentions from notes instead of demanding data entry |
-| **Voice** | Spoken morning brief; "Hey Siri, Ask Select" from a phone over a secured tunnel; dictated thinking sessions that file themselves |
+| **Voice** | Spoken morning brief; "Hey Siri, Ask Phoebe" from a phone over a secured tunnel; dictated thinking sessions that file themselves |
 | **Finances** | A living balance sheet from raw exports: every account, penny-reconciled stock lots, an honest index benchmark, net worth charted over time |
-| **Select Property** | Everything is an asset: every house system, vehicle, and tool leads with what it consumes, carries its manuals and photos, and *hears* finished upkeep from tasks, texts, payments, and papers — plus a portal for the land itself, with historical aerials, survey lines, and its ownership history |
+| **Phoebe Property** | Everything is an asset: every house system, vehicle, and tool leads with what it consumes, carries its manuals and photos, and *hears* finished upkeep from tasks, texts, payments, and papers — plus a portal for the land itself, with historical aerials, survey lines, and its ownership history |
 | **Family history** | A family tree in one standard file with an audit trail on every change, a migration map, and evidence rules strict enough that a link is "proven" only when an original record has been read |
 | **Intentions** | Consent-based goal review — every goal gets a periodic verdict, so silent abandonment is structurally impossible — plus the weekly household meeting, run live |
 | **Dev Dashboard** | The dev cycle itself as a kanban: agent recommendations land as cards, ships require evidence, review is a click-through room |
 
 <table>
   <tr>
-    <td width="25%"><a href="https://cobbenterprises.github.io/select-showcase/SUBSYSTEMS.html#select-home"><img src="media/home-desktop.png" alt="Select Home"/><br/><sub><b>Home</b></sub></a></td>
-    <td width="25%"><a href="https://cobbenterprises.github.io/select-showcase/SUBSYSTEMS.html#select-tasks--board"><img src="media/tasks.png" alt="Tasks"/><br/><sub><b>Tasks + Board</b></sub></a></td>
+    <td width="25%"><a href="https://cobbenterprises.github.io/select-showcase/SUBSYSTEMS.html#phoebe-home"><img src="media/home-desktop.png" alt="Phoebe Home"/><br/><sub><b>Home</b></sub></a></td>
+    <td width="25%"><a href="https://cobbenterprises.github.io/select-showcase/SUBSYSTEMS.html#phoebe-tasks--board"><img src="media/tasks.png" alt="Tasks"/><br/><sub><b>Tasks + Board</b></sub></a></td>
     <td width="25%"><a href="https://cobbenterprises.github.io/select-showcase/SUBSYSTEMS.html#media-log"><img src="media/media-library.png" alt="Media Library"/><br/><sub><b>Media Library</b></sub></a></td>
     <td width="25%"><a href="https://cobbenterprises.github.io/select-showcase/SUBSYSTEMS.html#finances"><img src="media/finances-overview.png" alt="Finances"/><br/><sub><b>Finances</b></sub></a></td>
   </tr>
@@ -44,14 +46,14 @@ Every one of these is a live surface used daily, not a demo:
     <td width="25%"><a href="https://cobbenterprises.github.io/select-showcase/SUBSYSTEMS.html#dev-dashboard"><img src="media/dev-dashboard.png" alt="Dev Dashboard"/><br/><sub><b>Dev Dashboard</b></sub></a></td>
   </tr>
   <tr>
-    <td width="25%"><a href="https://cobbenterprises.github.io/select-showcase/SUBSYSTEMS.html#select-media"><img src="media/select-media.png" alt="Select Media"/><br/><sub><b>Select Media</b></sub></a></td>
-    <td width="25%"><a href="https://cobbenterprises.github.io/select-showcase/SUBSYSTEMS.html#select-learn"><img src="media/select-learn.png" alt="Select Learn"/><br/><sub><b>Select Learn</b></sub></a></td>
-    <td width="25%"><a href="https://cobbenterprises.github.io/select-showcase/SUBSYSTEMS.html#also-in-the-family"><img src="media/marketing-results.png" alt="Select Marketing"/><br/><sub><b>Marketing</b></sub></a></td>
-    <td width="25%"><a href="https://cobbenterprises.github.io/select-showcase/SUBSYSTEMS.html#select-menu"><img src="media/select-menu.png" alt="Select Menu"/><br/><sub><b>Select Menu</b></sub></a></td>
+    <td width="25%"><a href="https://cobbenterprises.github.io/select-showcase/SUBSYSTEMS.html#phoebe-media"><img src="media/select-media.png" alt="Phoebe Media"/><br/><sub><b>Phoebe Media</b></sub></a></td>
+    <td width="25%"><a href="https://cobbenterprises.github.io/select-showcase/SUBSYSTEMS.html#phoebe-learn"><img src="media/select-learn.png" alt="Phoebe Learn"/><br/><sub><b>Phoebe Learn</b></sub></a></td>
+    <td width="25%"><a href="https://cobbenterprises.github.io/select-showcase/SUBSYSTEMS.html#also-in-the-family"><img src="media/marketing-results.png" alt="Phoebe Marketing"/><br/><sub><b>Marketing</b></sub></a></td>
+    <td width="25%"><a href="https://cobbenterprises.github.io/select-showcase/SUBSYSTEMS.html#phoebe-menu"><img src="media/select-menu.png" alt="Phoebe Menu"/><br/><sub><b>Phoebe Menu</b></sub></a></td>
   </tr>
   <tr>
-    <td width="25%"><a href="https://cobbenterprises.github.io/select-showcase/SUBSYSTEMS.html#select-property"><img src="media/property-have.png" alt="Select Property"/><br/><sub><b>Property</b></sub></a></td>
-    <td width="25%"><a href="https://cobbenterprises.github.io/select-showcase/SUBSYSTEMS.html#select-property"><img src="media/property-dossier.png" alt="A Property dossier"/><br/><sub><b>Property dossier</b></sub></a></td>
+    <td width="25%"><a href="https://cobbenterprises.github.io/select-showcase/SUBSYSTEMS.html#phoebe-property"><img src="media/property-have.png" alt="Phoebe Property"/><br/><sub><b>Property</b></sub></a></td>
+    <td width="25%"><a href="https://cobbenterprises.github.io/select-showcase/SUBSYSTEMS.html#phoebe-property"><img src="media/property-dossier.png" alt="A Property dossier"/><br/><sub><b>Property dossier</b></sub></a></td>
     <td width="25%"><a href="https://cobbenterprises.github.io/select-showcase/SUBSYSTEMS.html#family-history"><img src="media/genealogy-tree.png" alt="Family history"/><br/><sub><b>Family history</b></sub></a></td>
     <td width="25%"><a href="https://cobbenterprises.github.io/select-showcase/SUBSYSTEMS.html#family-history"><img src="media/genealogy-places.png" alt="Family journeys"/><br/><sub><b>Family journeys</b></sub></a></td>
   </tr>
