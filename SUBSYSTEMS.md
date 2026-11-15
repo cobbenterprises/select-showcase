@@ -1,6 +1,6 @@
 # Subsystem Tour
 
-One section per subsystem. Every screenshot below is captured from a sanitized demonstration vault — a fictional family, fictional finances, fictional messages — running the real plugins. Most were taken before November 2026, when the apps still said "Select" instead of "Phoebe". GIFs are still being recorded; remaining placeholders are marked.
+One section per subsystem. Every screenshot below is captured from a sanitized demonstration vault — a fictional family, fictional finances, fictional messages — running the real plugins. GIFs are still being recorded; remaining placeholders are marked.
 
 ---
 
